@@ -1,8 +1,8 @@
 import * as React from "react";
 import { CustomButton } from "./CustomButton";
 import styled from "styled-components";
-import { ReactComponent as Ellipse3 } from "../assets/svg-images/ellipse-3.svg";
-import { ReactComponent as HeroImage } from "../assets/svg-images/hero-img.svg";
+import { ReactComponent as Ellipse3 } from "../assets/images/svg-images/ellipse-3.svg";
+import { ReactComponent as HeroImage } from "../assets/images/svg-images/hero-img.svg";
 import { fontTypes, colors } from "../styles/styleConstants";
 
 const LandingContainerWrapper = styled.div`

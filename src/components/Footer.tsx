@@ -2,6 +2,7 @@ import * as React from "react";
 import { Logo } from "./Logo";
 import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
+import { FooterContent } from "./FooterContent";
 
 const FooterWrapper = styled.div`
   position: relative;
@@ -30,6 +31,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <Logo inverse />
+      <FooterContent />
       <BreakLine />
       <TermsAndConditions>Therms & Conditions</TermsAndConditions>
     </FooterWrapper>

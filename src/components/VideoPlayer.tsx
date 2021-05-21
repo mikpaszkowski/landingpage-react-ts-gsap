@@ -1,17 +1,22 @@
 import * as React from "react";
 import styled from "styled-components";
 import { PlayButton } from "./PlayButton";
+import { device } from "../styles/responsive";
 
 const VideoPlayerWrapper = styled.div`
-  height: auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   margin: 0 10rem 15rem 10rem;
-  position: relative;
 
   & > img {
     width: 100%;
-    height: 100%;
     border-radius: 0.8rem;
+  }
+
+  @media ${device.mobileMedium} {
+    margin: 0 auto;
   }
 `;
 

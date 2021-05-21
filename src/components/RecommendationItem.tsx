@@ -1,8 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
+import { device } from "../styles/responsive";
 
-const RecommandationItemWrapper = styled.div``;
+const RecommandationItemWrapper = styled.div`
+  @media ${device.mobileMedium} {
+    margin-bottom: 10rem;
+  }
+`;
 
 const Headline = styled.p`
   display: block;
@@ -15,6 +20,10 @@ const Headline = styled.p`
   text-align: center;
   font-feature-settings: "haln" on;
   color: ${colors.primaryTheme};
+
+  @media ${device.mobileMedium} {
+    margin-bottom: 0.6rem;
+  }
 `;
 
 const Description = styled.p`

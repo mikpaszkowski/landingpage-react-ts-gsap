@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
 import { lists } from "../assets/footerLists/footerLists";
+import { device } from "../styles/responsive";
 
 const List = styled.ul`
   & > li {
@@ -17,6 +18,10 @@ const List = styled.ul`
       color: ${colors.secondaryLight};
       margin-bottom: 1.9rem;
     }
+  }
+
+  @media ${device.mobileMedium} {
+    margin-bottom: 3.1rem;
   }
 `;
 

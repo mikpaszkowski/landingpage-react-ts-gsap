@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { MenuItem } from "./MenuItem";
 import { CustomButton } from "./CustomButton";
+import { device } from "../styles/responsive";
 
 const MenuWrapper = styled.div`
   display: flex;
@@ -9,6 +10,10 @@ const MenuWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 64.4rem;
+
+  @media ${device.mobileMedium} {
+    display: none;
+  }
 `;
 
 export const Menu = () => {

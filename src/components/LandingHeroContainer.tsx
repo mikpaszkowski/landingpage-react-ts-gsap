@@ -4,19 +4,37 @@ import styled from "styled-components";
 import { ReactComponent as Ellipse3 } from "../assets/images/svg-images/ellipse-3.svg";
 import { ReactComponent as HeroImage } from "../assets/images/svg-images/hero-img.svg";
 import { fontTypes, colors } from "../styles/styleConstants";
+import { device } from "../styles/responsive";
 
 const LandingContainerWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 15.3rem;
+
+  @media ${device.laptopLarge} {
+    flex-direction: row;
+  }
+
+  @media ${device.laptopSmall} {
+    flex-direction: column-reverse;
+  }
+
+  @media ${device.mobileMedium} {
+    flex-direction: column-reverse;
+    margin-top: 4.8rem;
+  }
 `;
 
 const HeroHeadline = styled.div`
   font-size: 8rem;
   margin-left: 0.2rem;
-  width: 42.3rem;
+  /* width: 42.3rem; */
   line-height: 117%;
+
+  @media ${device.mobileMedium} {
+    font-size: 5rem;
+  }
 `;
 
 const HeroMessage = styled.p`
@@ -29,12 +47,22 @@ const HeroMessage = styled.p`
   margin-bottom: 3.6rem;
   margin-top: 1.6rem;
   margin-left: 0.2rem;
-  width: 42rem;
+
+  @media ${device.mobileMedium} {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 100%;
+  }
 `;
 
 const GetStartedBtn = styled(CustomButton)`
   padding: 1.6rem 1rem;
   width: 25.5rem;
+
+  @media ${device.mobileMedium} {
+    width: 100%;
+  }
 `;
 
 const HeroImageStyled = styled(HeroImage)`
@@ -45,7 +73,23 @@ const HeroLeftHalf = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 43.4rem;
+
+  @media ${device.laptopSmall} {
+    flex-direction: column;
+    margin-top: 4.2rem;
+  }
+
+  @media ${device.mobileMedium} {
+    margin-top: 4.2rem;
+    flex-direction: column;
+  }
+`;
+
+const Ellipse3Styled = styled(Ellipse3)`
+  @media ${device.mobileMedium} {
+    width: 2.7rem;
+    height: 2rem;
+  }
 `;
 
 export const LandingContainer = () => {
@@ -53,7 +97,7 @@ export const LandingContainer = () => {
     <LandingContainerWrapper>
       <HeroLeftHalf>
         <HeroHeadline>
-          Check y<Ellipse3 />
+          Check y<Ellipse3Styled />
           ur well-being
         </HeroHeadline>
         <HeroMessage>

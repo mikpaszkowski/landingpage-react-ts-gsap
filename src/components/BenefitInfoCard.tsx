@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { fontTypes } from "../styles/styleConstants";
+import { device } from "../styles/responsive";
 
 const BenefitInfoCardWrapper = styled.div`
   display: flex;

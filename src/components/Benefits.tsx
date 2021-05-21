@@ -4,11 +4,17 @@ import styled from "styled-components";
 import { ReactComponent as FirstBenefitImage } from "../assets/images/svg-images/benefit-1.svg";
 import { ReactComponent as SecondBenefitImage } from "../assets/images/svg-images/benefit-2.svg";
 import { ReactComponent as ThirdBenefitImage } from "../assets/images/svg-images/benefit-3.svg";
+import { device } from "../styles/responsive";
 
 const BenefitsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3rem;
+
+  @media ${device.mobileMedium} {
+    display: block;
+    padding: 0 2.4rem;
+  }
 `;
 
 export const Benefits = () => {

@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
+import { device } from "../styles/responsive";
 
 const CustomInputWrapper = styled.input`
   position: relative;
@@ -16,6 +17,10 @@ const CustomInputWrapper = styled.input`
   border: 1px solid ${colors.secondaryLight};
   border-radius: 8px;
   padding: 1.2rem 14rem 1.2rem 1.6rem;
+
+  @media ${device.mobileMedium} {
+    width: 100%;
+  }
 `;
 
 interface CustomInputProps {

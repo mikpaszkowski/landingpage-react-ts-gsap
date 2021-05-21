@@ -2,14 +2,19 @@ import * as React from "react";
 import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
 import { VideoPlayer } from "../components/VideoPlayer";
+import { device } from "../styles/responsive";
 
 const VideoContainerWrapper = styled.div`
   width: 100%;
-  height: 81.1rem;
   background-color: ${colors.primaryTheme};
   position: relative;
   overflow: visible;
   margin-bottom: 36.3rem;
+
+  @media ${device.mobileMedium} {
+    padding: 0 2.4rem;
+    margin-bottom: 13.7rem;
+  }
 `;
 
 const HeadLine = styled.h1`
@@ -22,6 +27,13 @@ const HeadLine = styled.h1`
   line-height: 117%;
   text-align: center;
   font-feature-settings: "haln" on;
+
+  @media ${device.mobileMedium} {
+    font-size: 5rem;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 3.7rem;
+  }
 `;
 
 const Text = styled.p`
@@ -32,6 +44,13 @@ const Text = styled.p`
   line-height: 3.6rem;
   text-align: center;
   margin: 4rem 53.5rem 5.6rem 53.5rem;
+
+  @media ${device.mobileMedium} {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 5.6rem;
+  }
 `;
 
 export const VideoContainer = () => {

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { fontTypes, colors } from "../styles/styleConstants";
 import { CustomInput } from "./CustomInput";
 import { CustomButton } from "./CustomButton";
+import { device } from "../styles/responsive";
 
 const EmailInputContainerWrapper = styled.div`
   position: relative;
@@ -18,11 +19,20 @@ const EmailInputContainerWrapper = styled.div`
 `;
 
 const CustomButtonStyled = styled(CustomButton)`
-  position: absolute;
   right: 0.8rem;
   bottom: 0.8rem;
   padding: 0.3rem 1.6rem 0.4rem 1.6rem;
   border-radius: 4px;
+
+  @media ${device.mobileMedium} {
+    position: relative;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    padding: 1.6rem 8rem 1.6rem 8rem;
+    margin: 1.6rem 0 6.3rem 0;
+  }
 `;
 
 export const EmailInputContainer = () => {

@@ -12,6 +12,7 @@ const LogoWrapper = styled.div`
   position: relative;
   width: 17.3rem;
   height: 4.7rem;
+  cursor: pointer;
 `;
 
 const LogoText = styled.p`

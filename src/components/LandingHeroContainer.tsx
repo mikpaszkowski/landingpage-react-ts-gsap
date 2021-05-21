@@ -10,7 +10,7 @@ const LandingContainerWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 15.3rem;
+  margin-top: 27.1rem;
 
   @media ${device.laptopLarge} {
     flex-direction: row;

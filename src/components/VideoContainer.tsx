@@ -6,6 +6,7 @@ import { device } from "../styles/responsive";
 
 const VideoContainerWrapper = styled.div`
   width: 100%;
+  height: 81.1rem;
   background-color: ${colors.primaryTheme};
   position: relative;
   overflow: visible;
@@ -14,6 +15,7 @@ const VideoContainerWrapper = styled.div`
   @media ${device.mobileMedium} {
     padding: 0 2.4rem;
     margin-bottom: 13.7rem;
+    height: 49.7rem;
   }
 `;
 

@@ -19,6 +19,7 @@ const EmailInputContainerWrapper = styled.div`
 `;
 
 const CustomButtonStyled = styled(CustomButton)`
+  position: absolute;
   right: 0.8rem;
   bottom: 0.8rem;
   padding: 0.3rem 1.6rem 0.4rem 1.6rem;
@@ -40,7 +41,11 @@ export const EmailInputContainer = () => {
     <EmailInputContainerWrapper>
       <p>Try Medli for free</p>
       <CustomInput placeholder="Enter your email" />
-      <CustomButtonStyled fontsize="1.8rem" lineHeight="2.7rem">
+      <CustomButtonStyled
+        fontsize="1.8rem"
+        lineHeight="2.7rem"
+        borderRadius="4px"
+      >
         Get started
       </CustomButtonStyled>
     </EmailInputContainerWrapper>

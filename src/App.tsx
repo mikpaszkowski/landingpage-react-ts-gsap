@@ -5,6 +5,7 @@ import { Recommendation } from "./components/Recommendation";
 import { VideoContainer } from "./components/VideoContainer";
 import { BenefitsContainer } from "./components/BenefitContainer";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 
 const AppWrapper = styled.div`
   display: block;
@@ -16,6 +17,7 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
+      <Header />
       <LandingPage />
       <Recommendation />
       <VideoContainer />

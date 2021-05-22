@@ -15,6 +15,13 @@ const PlayButtonWrapper = styled.div`
   background-color: rgba(254, 244, 230, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  will-change: transform;
+
+  &:hover {
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(254, 244, 230, 1);
+  }
 
   @media ${device.mobileMedium} {
     width: 7.8rem;

@@ -20,8 +20,9 @@ const MenuWrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   z-index: 999;
-  padding: 7rem 2.4rem 10rem 2.4rem;
+  padding: 7rem 2.4rem 5rem 2.4rem;
   background-color: ${colors.background};
   transform: translateY(0);
   animation-name: ${slideDown};
@@ -36,6 +37,7 @@ const Menu = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 `;
 
 const LogInButton = styled(CustomButton)`

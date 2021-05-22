@@ -5,6 +5,8 @@ import { VideoPlayer } from "../components/VideoPlayer";
 import { device } from "../styles/responsive";
 
 const VideoContainerWrapper = styled.div`
+  position: relative;
+  z-index: 0;
   width: 100%;
   height: 81.1rem;
   background-color: ${colors.primaryTheme};
@@ -51,7 +53,7 @@ const Text = styled.p`
     font-size: 2rem;
     text-align: left;
     margin: 0;
-    margin-bottom: 5.6rem;
+    margin-bottom: 7.5rem;
   }
 `;
 

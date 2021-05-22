@@ -4,6 +4,10 @@ import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
 import { Benefits } from "./Benefits";
 import { device } from "../styles/responsive";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const HeadLine = styled.h1`
   font-family: ${fontTypes.primaryFont};
@@ -40,6 +44,7 @@ const Text = styled.span`
 
 const BenefitsWrapper = styled.div`
   margin: 0 16.5rem 11.4rem 16.5rem;
+  will-change: transform;
 
   @media ${device.mobileMedium} {
     margin: 0 2.4rem 6.4rem 2.4rem;
@@ -47,8 +52,64 @@ const BenefitsWrapper = styled.div`
 `;
 
 export const BenefitsContainer = () => {
+  const { useRef, useEffect } = React;
+
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    console.log(window.innerWidth);
+  }, [window.innerWidth]);
+
+  useEffect(() => {
+    ScrollTrigger.matchMedia({
+      "(max-width: 1440px)": function () {
+        gsap.fromTo(
+          sectionRef.current,
+          {
+            opacity: 0,
+            y: "-=100",
+          },
+          {
+            duration: 0.5,
+            delay: 0.3,
+            opacity: 1,
+            y: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: `${sectionRef.current?.className}`,
+              start: "center+=150 center+=100",
+              markers: true,
+            },
+          }
+        );
+      },
+
+      "(max-width: 375px)": function () {
+        gsap.fromTo(
+          sectionRef.current,
+          {
+            opacity: 0,
+            y: "-=30",
+          },
+          {
+            duration: 0.5,
+            delay: 0.3,
+            opacity: 1,
+            y: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: `${sectionRef.current?.className}`,
+              start: "center 10%",
+              markers: true,
+            },
+          }
+        );
+      },
+    });
+  });
+
   return (
-    <BenefitsWrapper>
+    <BenefitsWrapper ref={sectionRef}>
       <HeadLine>What you’re getting?</HeadLine>
       <Text>
         We bring you personalized development programs that are backed by

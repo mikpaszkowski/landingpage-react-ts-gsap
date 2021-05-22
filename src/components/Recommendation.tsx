@@ -2,12 +2,15 @@ import * as React from "react";
 import styled from "styled-components";
 import { RecommendationItem } from "./RecommendationItem";
 import { device } from "../styles/responsive";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
 
 const RecommendationWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 11.1rem;
-  margin: 22rem 21.8rem;
+  margin: 22rem 21.9rem;
+  will-change: transform;
 
   @media ${device.mobileMedium} {
     display: block;

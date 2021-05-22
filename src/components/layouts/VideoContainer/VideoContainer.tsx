@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colors, fontTypes } from "../styles/styleConstants";
-import { VideoPlayer } from "../components/VideoPlayer";
-import { device } from "../styles/responsive";
+import { colors, fontTypes } from "../../../styles/styleConstants";
+import { VideoPlayer } from "./VideoPlayer";
+import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -73,17 +73,17 @@ export const VideoContainer = () => {
           headlineRef.current,
           {
             opacity: 0,
-            x: "-=120",
+            x: "-=80",
           },
           {
             duration: 1,
             delay: 0.2,
             opacity: 1,
             x: 0,
-            ease: "expo.out",
+            ease: "easeInOut",
             scrollTrigger: {
               trigger: `${headlineRef.current?.className}`,
-              start: "center-=1000 20%",
+              start: "center-=1000 40%",
               markers: true,
             },
           }
@@ -93,7 +93,7 @@ export const VideoContainer = () => {
           textSectionRef.current,
           {
             opacity: 0,
-            x: "+=120",
+            x: "+=80",
           },
           {
             duration: 1,

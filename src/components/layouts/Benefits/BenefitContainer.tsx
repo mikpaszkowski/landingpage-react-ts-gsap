@@ -1,9 +1,9 @@
 //Here is the container with the grid contains all of the benefits from the service
 import * as React from "react";
 import styled from "styled-components";
-import { colors, fontTypes } from "../styles/styleConstants";
+import { fontTypes } from "../../../styles/styleConstants";
 import { Benefits } from "./Benefits";
-import { device } from "../styles/responsive";
+import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -56,10 +56,6 @@ export const BenefitsContainer = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log(window.innerWidth);
-  }, [window.innerWidth]);
-
-  useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": function () {
         gsap.fromTo(
@@ -75,8 +71,10 @@ export const BenefitsContainer = () => {
             y: 0,
             ease: "power4.out",
             scrollTrigger: {
+              id: "benefitContainer",
               trigger: `${sectionRef.current?.className}`,
-              start: "center+=150 center+=100",
+              start: "center-=650 bottom",
+              scrub: 1,
               markers: true,
             },
           }

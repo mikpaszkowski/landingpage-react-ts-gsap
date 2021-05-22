@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Logo } from "./Logo";
+import { Logo } from "../../ReusableComponents/Logo/Logo";
 import { Menu } from "./Menu";
 import styled from "styled-components";
-import { ReactComponent as Bar } from "../assets/images/svg-images/menu-bar.svg";
-import { device } from "../styles/responsive";
+import { ReactComponent as Bar } from "./menu-bar.svg";
+import { device } from "../../../styles/responsive";
 import { MenuMobile } from "./MenuMobile";
-import { colors } from "../styles/styleConstants";
+import { colors } from "../../../styles/styleConstants";
 
 const HeaderWrapper = styled.header`
   position: fixed;

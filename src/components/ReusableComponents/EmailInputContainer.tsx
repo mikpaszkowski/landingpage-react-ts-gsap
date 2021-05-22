@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes, colors } from "../styles/styleConstants";
+import { fontTypes, colors } from "../../styles/styleConstants";
 import { CustomInput } from "./CustomInput";
 import { CustomButton } from "./CustomButton";
-import { device } from "../styles/responsive";
+import { device } from "../../styles/responsive";
 
 const EmailInputContainerWrapper = styled.div`
   position: relative;

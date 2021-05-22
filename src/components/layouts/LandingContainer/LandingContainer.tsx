@@ -1,8 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Header } from "./Header";
-import { LandingContainer } from "./LandingHeroContainer";
-import { device } from "../styles/responsive";
+import { LandingHeroContainer } from "./LandingHeroContainer";
+import { device } from "../../../styles/responsive";
 
 const LandingPageWrapper = styled.div`
   position: relative;
@@ -14,10 +13,10 @@ const LandingPageWrapper = styled.div`
   }
 `;
 
-export const LandingPage = () => {
+export const LandingContainer = () => {
   return (
     <LandingPageWrapper>
-      <LandingContainer />
+      <LandingHeroContainer />
     </LandingPageWrapper>
   );
 };

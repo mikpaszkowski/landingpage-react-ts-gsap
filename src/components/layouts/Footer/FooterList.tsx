@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colors, fontTypes } from "../styles/styleConstants";
-import { lists } from "../assets/footerLists/footerLists";
-import { device } from "../styles/responsive";
+import { colors, fontTypes } from "../../../styles/styleConstants";
+import { lists } from "../../../assets/footerLists/footerLists";
+import { device } from "../../../styles/responsive";
 
 const List = styled.ul`
   & > li {
@@ -33,8 +33,8 @@ export const FooterList = ({ listName }: FooterListProps) => {
   return (
     <List>
       <li>{listName}</li>
-      {lists[`${listName.toLocaleLowerCase()}`].map((item) => (
-        <li>{item}</li>
+      {lists[`${listName.toLocaleLowerCase()}`].map((item, index) => (
+        <li key={index}>{item}</li>
       ))}
     </List>
   );

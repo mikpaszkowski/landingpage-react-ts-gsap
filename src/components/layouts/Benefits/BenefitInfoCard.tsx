@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../styles/styleConstants";
-import { device } from "../styles/responsive";
+import { fontTypes } from "../../../styles/styleConstants";
 
 const BenefitInfoCardWrapper = styled.div`
   display: flex;
@@ -49,16 +48,14 @@ interface BenefitInfoCardProps {
 export const BenefitInfoCard = React.forwardRef<
   HTMLDivElement,
   BenefitInfoCardProps
->((props, ref) => {
-  const { useRef } = React;
-
-  const BenefitImage = props.image;
+>(({ image, id, headline, description }, ref) => {
+  const BenefitImage = image;
 
   return (
-    <BenefitInfoCardWrapper ref={ref} id={props.id}>
+    <BenefitInfoCardWrapper ref={ref} id={id}>
       <BenefitImage style={imageCenteringStyle} />
-      <HeadLine>{props.headline}</HeadLine>
-      <Text>{props.description}</Text>
+      <HeadLine>{headline}</HeadLine>
+      <Text>{description}</Text>
     </BenefitInfoCardWrapper>
   );
 });

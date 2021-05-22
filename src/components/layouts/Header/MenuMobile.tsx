@@ -1,9 +1,8 @@
 import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { MenuItem } from "./MenuItem";
-import { CustomButton } from "./CustomButton";
-import { device } from "../styles/responsive";
-import { colors } from "../styles/styleConstants";
+import { CustomButton } from "../../ReusableComponents/CustomButton";
+import { colors } from "../../../styles/styleConstants";
 import { IoCloseOutline } from "react-icons/io5";
 
 const slideDown = keyframes`

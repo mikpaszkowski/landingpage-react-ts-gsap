@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { FooterList } from "./FooterList";
-import { EmailInputContainer } from "./EmailInputContainer";
-import { device } from "../styles/responsive";
+import { EmailInputContainer } from "../../ReusableComponents/EmailInputContainer";
+import { device } from "../../../styles/responsive";
 
 const FooterContentWrapper = styled.div`
   display: flex;

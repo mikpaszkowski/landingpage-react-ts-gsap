@@ -1,10 +1,10 @@
 import * as React from "react";
 import { BenefitInfoCard } from "./BenefitInfoCard";
 import styled from "styled-components";
-import { ReactComponent as FirstBenefitImage } from "../assets/images/svg-images/benefit-1.svg";
-import { ReactComponent as SecondBenefitImage } from "../assets/images/svg-images/benefit-2.svg";
-import { ReactComponent as ThirdBenefitImage } from "../assets/images/svg-images/benefit-3.svg";
-import { device } from "../styles/responsive";
+import { ReactComponent as FirstBenefitImage } from "./benefit-1.svg";
+import { ReactComponent as SecondBenefitImage } from "./benefit-2.svg";
+import { ReactComponent as ThirdBenefitImage } from "./benefit-3.svg";
+import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -43,7 +43,7 @@ const benefitCardsContent = [
 ];
 
 export const Benefits = () => {
-  const { useRef, useEffect, useState } = React;
+  const { useRef, useEffect } = React;
 
   const benefitsRef = useRef<HTMLDivElement>(null);
   const benefitsCardsRef = useRef<Array<HTMLDivElement>>([]);
@@ -56,7 +56,6 @@ export const Benefits = () => {
   };
 
   useEffect(() => {
-    console.log(benefitsCardsRef.current);
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": function () {
         benefitsCardsRef.current.forEach((card) => {
@@ -67,8 +66,8 @@ export const Benefits = () => {
               y: "+=100",
             },
             {
-              duration: 1,
-              delay: 1,
+              duration: 0.7,
+              delay: 0.5,
               opacity: 1,
               y: 0,
               ease: "none",

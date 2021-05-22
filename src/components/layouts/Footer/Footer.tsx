@@ -1,9 +1,9 @@
 import * as React from "react";
-import { Logo } from "./Logo";
+import { Logo } from "../../ReusableComponents/Logo/Logo";
 import styled from "styled-components";
-import { colors, fontTypes } from "../styles/styleConstants";
+import { colors, fontTypes } from "../../../styles/styleConstants";
 import { FooterContent } from "./FooterContent";
-import { device } from "../styles/responsive";
+import { device } from "../../../styles/responsive";
 
 const FooterWrapper = styled.div`
   position: relative;

@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ReactComponent as PlayPolygon } from "../assets/images/svg-images/playButtonPolygon.svg";
-import { ReactComponent as PlayPolygonSmall } from "../assets/images/svg-images/playButtonPolygonSmall.svg";
-import { device } from "../styles/responsive";
+import { ReactComponent as PlayPolygon } from "./playButtonPolygon.svg";
+import { ReactComponent as PlayPolygonSmall } from "./playButtonPolygonSmall.svg";
+import { device } from "../../../styles/responsive";
 
 const PlayButtonWrapper = styled.div`
   position: absolute;

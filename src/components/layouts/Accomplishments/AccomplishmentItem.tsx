@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colors, fontTypes } from "../styles/styleConstants";
-import { device } from "../styles/responsive";
+import { colors, fontTypes } from "../../../styles/styleConstants";
+import { device } from "../../../styles/responsive";
 
 const RecommandationItemWrapper = styled.div`
   @media ${device.mobileMedium} {

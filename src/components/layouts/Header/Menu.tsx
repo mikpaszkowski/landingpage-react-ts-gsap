@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { MenuItem } from "./MenuItem";
-import { CustomButton } from "./CustomButton";
-import { device } from "../styles/responsive";
+import { CustomButton } from "../../ReusableComponents/CustomButton";
+import { device } from "../../../styles/responsive";
 
 const MenuWrapper = styled.div`
   display: flex;

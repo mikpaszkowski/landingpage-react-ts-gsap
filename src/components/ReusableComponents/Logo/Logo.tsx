@@ -1,8 +1,8 @@
 import * as React from "react";
-import { ReactComponent as Ellipse2 } from "../assets/images/svg-images/ellipse-2.svg";
-import { ReactComponent as Ellipse1 } from "../assets/images/svg-images/ellipse-1.svg";
+import { ReactComponent as Ellipse2 } from "./ellipse-2.svg";
+import { ReactComponent as Ellipse1 } from "./ellipse-1.svg";
 import styled from "styled-components";
-import { colors } from "../styles/styleConstants";
+import { colors } from "../../../styles/styleConstants";
 
 const LogoWrapper = styled.div`
   display: flex;

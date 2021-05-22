@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { PlayButton } from "./PlayButton";
-import { device } from "../styles/responsive";
+import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -49,17 +49,17 @@ export const VideoPlayer = () => {
           videoRef.current,
           {
             opacity: 0,
-            y: "-=120",
+            y: "-=80",
           },
           {
             duration: 1.2,
-            delay: 0.5,
+            delay: 0.7,
             opacity: 1,
             y: 0,
             ease: "expo.out",
             scrollTrigger: {
               trigger: `${videoRef.current?.className}`,
-              start: "center-=800 20%",
+              start: "center-=800 40%",
               markers: true,
             },
           }
@@ -92,7 +92,10 @@ export const VideoPlayer = () => {
 
   return (
     <VideoPlayerWrapper ref={videoRef}>
-      <Image src={`${process.env.PUBLIC_URL + "/yoga-woman-image.png"}`} />
+      <Image
+        src={`${process.env.PUBLIC_URL + "/yoga-woman-image.png"}`}
+        alt="Woman as freelance worker does yoga exersice in jumper."
+      />
       <PlayButton />
     </VideoPlayerWrapper>
   );

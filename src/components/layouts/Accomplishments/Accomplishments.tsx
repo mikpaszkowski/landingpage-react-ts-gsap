@@ -1,10 +1,11 @@
 import * as React from "react";
+
 import styled from "styled-components";
-import { RecommendationItem } from "./RecommendationItem";
-import { device } from "../styles/responsive";
-import { useIntersection } from "react-use";
+import { RecommendationItem } from "./AccomplishmentItem";
+import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const RecommendationWrapper = styled.div`

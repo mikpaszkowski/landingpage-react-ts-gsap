@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { LandingPage } from "./components/LandingPage";
-import { Recommendation } from "./components/Recommendation";
-import { VideoContainer } from "./components/VideoContainer";
-import { BenefitsContainer } from "./components/BenefitContainer";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import { Home } from "./components/pages/Home";
 
 const AppWrapper = styled.div`
   display: block;
@@ -17,12 +12,7 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
-      <Header />
-      <LandingPage />
-      <Recommendation />
-      <VideoContainer />
-      <BenefitsContainer />
-      <Footer />
+      <Home />
     </AppWrapper>
   );
 }

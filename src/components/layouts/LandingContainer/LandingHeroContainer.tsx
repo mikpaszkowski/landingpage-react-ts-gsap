@@ -1,10 +1,10 @@
 import * as React from "react";
-import { CustomButton } from "./CustomButton";
+import { CustomButton } from "../../ReusableComponents/CustomButton";
 import styled from "styled-components";
-import { ReactComponent as Ellipse3 } from "../assets/images/svg-images/ellipse-3.svg";
-import { ReactComponent as HeroImage } from "../assets/images/svg-images/hero-img.svg";
-import { fontTypes, colors } from "../styles/styleConstants";
-import { device } from "../styles/responsive";
+import { ReactComponent as Ellipse3 } from "./ellipse-3.svg";
+import { ReactComponent as HeroImage } from "./hero-img.svg";
+import { fontTypes, colors } from "../../../styles/styleConstants";
+import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -32,7 +32,6 @@ const LandingContainerWrapper = styled.div`
 const HeroHeadline = styled.div`
   font-size: 8rem;
   margin-left: 0.2rem;
-  /* width: 42.3rem; */
   line-height: 117%;
 
   @media ${device.mobileMedium} {
@@ -101,7 +100,7 @@ const ImageWrapper = styled.div`
   align-self: flex-end;
 `;
 
-export const LandingContainer = () => {
+export const LandingHeroContainer = () => {
   const { useRef, useEffect } = React;
 
   const leftScetionRef = useRef<HTMLDivElement>(null);

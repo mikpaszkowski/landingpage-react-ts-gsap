@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
 import { Benefits } from "./Benefits";
 import { device } from "../styles/responsive";
-import { useIntersection } from "react-use";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -62,7 +61,7 @@ export const BenefitsContainer = () => {
 
   useEffect(() => {
     ScrollTrigger.matchMedia({
-      "(max-width: 1440px)": function () {
+      "(min-width: 1440px)": function () {
         gsap.fromTo(
           sectionRef.current,
           {
@@ -70,11 +69,11 @@ export const BenefitsContainer = () => {
             y: "-=100",
           },
           {
-            duration: 0.5,
+            duration: 1,
             delay: 0.3,
             opacity: 1,
             y: 0,
-            ease: "none",
+            ease: "power4.out",
             scrollTrigger: {
               trigger: `${sectionRef.current?.className}`,
               start: "center+=150 center+=100",
@@ -96,10 +95,10 @@ export const BenefitsContainer = () => {
             delay: 0.3,
             opacity: 1,
             y: 0,
-            ease: "none",
+            ease: "power4.out",
             scrollTrigger: {
               trigger: `${sectionRef.current?.className}`,
-              start: "center 10%",
+              start: "top+=1700 20%",
               markers: true,
             },
           }

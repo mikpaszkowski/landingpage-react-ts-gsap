@@ -14,15 +14,7 @@ const AppWrapper = styled.div`
   position: relative;
 `;
 
-const { useRef, useEffect } = React;
-
 function App() {
-  const benefitRef = React.useRef();
-
-  useEffect(() => {
-    console.log(benefitRef);
-  }, [benefitRef]);
-
   return (
     <AppWrapper>
       <Header />

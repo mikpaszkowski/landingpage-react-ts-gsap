@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { colors, fontTypes } from "../styles/styleConstants";
 import { VideoPlayer } from "../components/VideoPlayer";
 import { device } from "../styles/responsive";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const VideoContainerWrapper = styled.div`
   position: relative;
@@ -58,10 +61,83 @@ const Text = styled.p`
 `;
 
 export const VideoContainer = () => {
+  const { useRef, useEffect } = React;
+
+  const headlineRef = useRef<HTMLHeadingElement>(null);
+  const textSectionRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    ScrollTrigger.matchMedia({
+      "(min-width: 1440px)": function () {
+        gsap.fromTo(
+          headlineRef.current,
+          {
+            opacity: 0,
+            x: "-=120",
+          },
+          {
+            duration: 1,
+            delay: 0.2,
+            opacity: 1,
+            x: 0,
+            ease: "expo.out",
+            scrollTrigger: {
+              trigger: `${headlineRef.current?.className}`,
+              start: "center-=1000 20%",
+              markers: true,
+            },
+          }
+        );
+
+        gsap.fromTo(
+          textSectionRef.current,
+          {
+            opacity: 0,
+            x: "+=120",
+          },
+          {
+            duration: 1,
+            delay: 0.6,
+            opacity: 1,
+            x: 0,
+            ease: "expo.out",
+            scrollTrigger: {
+              trigger: `${textSectionRef.current?.className}`,
+              start: "center-=1000 20%",
+              markers: true,
+            },
+          }
+        );
+      },
+
+      "(max-width: 375px)": function () {
+        gsap.fromTo(
+          headlineRef.current,
+          {
+            opacity: 0,
+            y: "-=30",
+          },
+          {
+            duration: 1,
+            delay: 0.5,
+            opacity: 1,
+            y: 0,
+            ease: "expo.out",
+            scrollTrigger: {
+              trigger: `${headlineRef.current?.className}`,
+              start: "center+=150 center+=100",
+              markers: true,
+            },
+          }
+        );
+      },
+    });
+  }, []);
+
   return (
     <VideoContainerWrapper>
-      <HeadLine>What our community is saying?</HeadLine>
-      <Text>
+      <HeadLine ref={headlineRef}>What our community is saying?</HeadLine>
+      <Text ref={textSectionRef}>
         A mission-driven company that invest in and builds healthier living
       </Text>
       <VideoPlayer />

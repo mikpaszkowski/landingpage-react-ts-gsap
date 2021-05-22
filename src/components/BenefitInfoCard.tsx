@@ -42,19 +42,23 @@ interface BenefitInfoCardProps {
   headline: string;
   description: string;
   image: any;
+  ref?: React.RefObject<HTMLDivElement>;
+  id?: string;
 }
 
-export const BenefitInfoCard = ({
-  headline,
-  description,
-  image,
-}: BenefitInfoCardProps) => {
-  const BenefitImage = image;
+export const BenefitInfoCard = React.forwardRef<
+  HTMLDivElement,
+  BenefitInfoCardProps
+>((props, ref) => {
+  const { useRef } = React;
+
+  const BenefitImage = props.image;
+
   return (
-    <BenefitInfoCardWrapper>
+    <BenefitInfoCardWrapper ref={ref} id={props.id}>
       <BenefitImage style={imageCenteringStyle} />
-      <HeadLine>{headline}</HeadLine>
-      <Text>{description}</Text>
+      <HeadLine>{props.headline}</HeadLine>
+      <Text>{props.description}</Text>
     </BenefitInfoCardWrapper>
   );
-};
+});

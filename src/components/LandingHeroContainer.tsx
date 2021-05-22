@@ -5,6 +5,9 @@ import { ReactComponent as Ellipse3 } from "../assets/images/svg-images/ellipse-
 import { ReactComponent as HeroImage } from "../assets/images/svg-images/hero-img.svg";
 import { fontTypes, colors } from "../styles/styleConstants";
 import { device } from "../styles/responsive";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const LandingContainerWrapper = styled.div`
   display: flex;
@@ -92,10 +95,88 @@ const Ellipse3Styled = styled(Ellipse3)`
   }
 `;
 
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+`;
+
 export const LandingContainer = () => {
+  const { useRef, useEffect } = React;
+
+  const leftScetionRef = useRef<HTMLDivElement>(null);
+  const rightScetionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    ScrollTrigger.matchMedia({
+      "(min-width: 1440px)": function () {
+        gsap.fromTo(
+          leftScetionRef.current,
+          {
+            opacity: 0,
+            x: "-=60",
+          },
+          {
+            duration: 1,
+            delay: 0.5,
+            opacity: 1,
+            x: 0,
+            ease: "expo.out",
+          }
+        );
+
+        gsap.fromTo(
+          rightScetionRef.current,
+          {
+            opacity: 0,
+            x: "+=60",
+          },
+          {
+            duration: 1,
+            delay: 0.5,
+            opacity: 1,
+            x: 0,
+            ease: "expo.out",
+          }
+        );
+      },
+
+      "(max-width: 375px)": function () {
+        gsap.fromTo(
+          leftScetionRef.current,
+          {
+            opacity: 0,
+            x: "-=30",
+          },
+          {
+            duration: 1,
+            delay: 0.5,
+            opacity: 1,
+            x: 0,
+            ease: "expo.out",
+          }
+        );
+
+        gsap.fromTo(
+          rightScetionRef.current,
+          {
+            opacity: 0,
+            x: "+=30",
+          },
+          {
+            duration: 1,
+            delay: 0.5,
+            opacity: 1,
+            x: 0,
+            ease: "expo.out",
+          }
+        );
+      },
+    });
+  });
   return (
     <LandingContainerWrapper>
-      <HeroLeftHalf>
+      <HeroLeftHalf ref={leftScetionRef}>
         <HeroHeadline>
           Check y<Ellipse3Styled />
           ur well-being
@@ -108,7 +189,9 @@ export const LandingContainer = () => {
           Get started
         </GetStartedBtn>
       </HeroLeftHalf>
-      <HeroImageStyled />
+      <ImageWrapper ref={rightScetionRef}>
+        <HeroImageStyled />
+      </ImageWrapper>
     </LandingContainerWrapper>
   );
 };

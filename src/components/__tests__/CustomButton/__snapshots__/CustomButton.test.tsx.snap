@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <CustomButton /> component 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.7rem 3.1rem;
+  font-family: 'Reem Kufi',sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.6rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FABD20;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.c0::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: black;
+  color: #FABD20;
+  -webkit-transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  color: #FABD20;
+}
+
+.c0:hover::after {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+<button
+  className="c0"
+/>
+`;

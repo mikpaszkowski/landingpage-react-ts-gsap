@@ -4,8 +4,13 @@ import styled from "styled-components";
 import { fontTypes } from "../../../styles/styleConstants";
 import { Benefits } from "./Benefits";
 import { device } from "../../../styles/responsive";
+
+import {
+  laptopLarge,
+  mobileMedium,
+} from "../../../animations/benefitContainer";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeadLine = styled.h1`
@@ -50,58 +55,16 @@ const BenefitsWrapper = styled.div`
   }
 `;
 
-export const BenefitsContainer = () => {
+export const BenefitContainer = () => {
   const { useRef, useEffect } = React;
 
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     ScrollTrigger.matchMedia({
-      "(min-width: 1440px)": function () {
-        gsap.fromTo(
-          sectionRef.current,
-          {
-            opacity: 0,
-            y: "-=100",
-          },
-          {
-            duration: 1,
-            delay: 0.3,
-            opacity: 1,
-            y: 0,
-            ease: "power4.out",
-            scrollTrigger: {
-              id: "benefitContainer",
-              trigger: `${sectionRef.current?.className}`,
-              start: "center-=650 bottom",
-              scrub: 1,
-              markers: true,
-            },
-          }
-        );
-      },
+      "(min-width: 1440px)": () => laptopLarge(sectionRef),
 
-      "(max-width: 375px)": function () {
-        gsap.fromTo(
-          sectionRef.current,
-          {
-            opacity: 0,
-            y: "-=30",
-          },
-          {
-            duration: 0.5,
-            delay: 0.3,
-            opacity: 1,
-            y: 0,
-            ease: "power4.out",
-            scrollTrigger: {
-              trigger: `${sectionRef.current?.className}`,
-              start: "top+=1700 20%",
-              markers: true,
-            },
-          }
-        );
-      },
+      "(max-width: 375px)": () => mobileMedium(sectionRef),
     });
   });
 

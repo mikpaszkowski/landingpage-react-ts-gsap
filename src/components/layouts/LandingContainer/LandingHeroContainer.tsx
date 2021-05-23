@@ -3,8 +3,13 @@ import { CustomButton } from "../../ReusableComponents/CustomButton";
 import styled from "styled-components";
 import { ReactComponent as Ellipse3 } from "./ellipse-3.svg";
 import { ReactComponent as HeroImage } from "./hero-img.svg";
-import { fontTypes, colors } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/styleConstants";
 import { device } from "../../../styles/responsive";
+
+import {
+  laptopLargeLeftSection,
+  laptopLargeRightSection,
+} from "../../../animations/landingHeroContainer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -33,9 +38,11 @@ const HeroHeadline = styled.div`
   font-size: 8rem;
   margin-left: 0.2rem;
   line-height: 117%;
+  width: 43rem;
 
   @media ${device.mobileMedium} {
     font-size: 5rem;
+    width: 100%;
   }
 `;
 
@@ -45,10 +52,11 @@ const HeroMessage = styled.p`
   font-style: normal;
   font-weight: normal;
   font-family: ${fontTypes.secondaryFont};
-  color: ${colors.secondaryFont};
+  color: ${({ theme }) => theme.palette.secondary.font};
   margin-bottom: 3.6rem;
   margin-top: 1.6rem;
   margin-left: 0.2rem;
+  width: 42rem;
 
   @media ${device.mobileMedium} {
     text-align: left;
@@ -61,6 +69,7 @@ const HeroMessage = styled.p`
 const GetStartedBtn = styled(CustomButton)`
   padding: 1.6rem 1rem;
   width: 25.5rem;
+  margin-bottom: 1.6rem;
 
   @media ${device.mobileMedium} {
     width: 100%;
@@ -69,12 +78,17 @@ const GetStartedBtn = styled(CustomButton)`
 
 const HeroImageStyled = styled(HeroImage)`
   align-self: flex-end;
+  width: 67.7rem;
+
+  @media ${device.mobileMedium} {
+    width: auto;
+  }
 `;
 
 const HeroLeftHalf = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media ${device.laptopSmall} {
     flex-direction: column;
@@ -109,67 +123,13 @@ export const LandingHeroContainer = () => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": function () {
-        gsap.fromTo(
-          leftScetionRef.current,
-          {
-            opacity: 0,
-            x: "-=60",
-          },
-          {
-            duration: 1,
-            delay: 0.5,
-            opacity: 1,
-            x: 0,
-            ease: "expo.out",
-          }
-        );
-
-        gsap.fromTo(
-          rightScetionRef.current,
-          {
-            opacity: 0,
-            x: "+=60",
-          },
-          {
-            duration: 1,
-            delay: 0.5,
-            opacity: 1,
-            x: 0,
-            ease: "expo.out",
-          }
-        );
+        laptopLargeLeftSection(leftScetionRef);
+        laptopLargeRightSection(rightScetionRef);
       },
 
       "(max-width: 375px)": function () {
-        gsap.fromTo(
-          leftScetionRef.current,
-          {
-            opacity: 0,
-            x: "-=30",
-          },
-          {
-            duration: 1,
-            delay: 0.5,
-            opacity: 1,
-            x: 0,
-            ease: "expo.out",
-          }
-        );
-
-        gsap.fromTo(
-          rightScetionRef.current,
-          {
-            opacity: 0,
-            x: "+=30",
-          },
-          {
-            duration: 1,
-            delay: 0.5,
-            opacity: 1,
-            x: 0,
-            ease: "expo.out",
-          }
-        );
+        laptopLargeLeftSection(leftScetionRef);
+        laptopLargeRightSection(rightScetionRef);
       },
     });
   });
@@ -184,9 +144,11 @@ export const LandingHeroContainer = () => {
           We’re sure that deciding to check on your health is a big step, even
           if it doesn’t bother in any way.
         </HeroMessage>
-        <GetStartedBtn fontsize="2.5rem" lineHeight="3.7rem">
-          Get started
-        </GetStartedBtn>
+        <GetStartedBtn
+          fontSize="2.5rem"
+          lineHeight="3.7rem"
+          name="Get started"
+        />
       </HeroLeftHalf>
       <ImageWrapper ref={rightScetionRef}>
         <HeroImageStyled />

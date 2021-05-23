@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colors, fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/styleConstants";
 import { device } from "../../../styles/responsive";
 
-const RecommandationItemWrapper = styled.div`
+const AccomplishmentItemWrapper = styled.div`
   @media ${device.mobileMedium} {
     margin-bottom: 10rem;
   }
 `;
 
-const Headline = styled.p`
+const Headline = styled.h1`
   display: block;
   font-family: ${fontTypes.primaryFont};
   font-style: normal;
@@ -19,7 +19,7 @@ const Headline = styled.p`
   margin-bottom: 1.6rem;
   text-align: center;
   font-feature-settings: "haln" on;
-  color: ${colors.primaryTheme};
+  color: ${({ theme }) => theme.palette.common.theme};
 
   @media ${device.mobileMedium} {
     margin-bottom: 0.6rem;
@@ -35,22 +35,22 @@ const Description = styled.p`
   line-height: 3.6rem;
   margin: 0 4rem;
   text-align: center;
-  color: ${colors.primaryFont};
+  color: ${({ theme }) => theme.palette.primary.font};
 `;
 
-interface RecommendationProps {
+interface AccomplishmentProps {
   headline: string;
   description: string;
 }
 
-export const RecommendationItem = ({
+export const AccomplishmentItem = ({
   headline,
   description,
-}: RecommendationProps) => {
+}: AccomplishmentProps) => {
   return (
-    <RecommandationItemWrapper>
+    <AccomplishmentItemWrapper>
       <Headline>{headline}</Headline>
       <Description>{description}</Description>
-    </RecommandationItemWrapper>
+    </AccomplishmentItemWrapper>
   );
 };

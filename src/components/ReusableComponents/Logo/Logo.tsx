@@ -2,7 +2,6 @@ import * as React from "react";
 import { ReactComponent as Ellipse2 } from "./ellipse-2.svg";
 import { ReactComponent as Ellipse1 } from "./ellipse-1.svg";
 import styled from "styled-components";
-import { colors } from "../../../styles/styleConstants";
 
 const LogoWrapper = styled.div`
   display: flex;
@@ -23,7 +22,7 @@ const LogoText = styled.p`
   width: 10.2rem;
   line-height: 117%;
   color: ${(props: LogoProps) =>
-    props.inverse ? "white" : colors.primaryFont};
+    props.inverse ? "white" : ({ theme }) => theme.palette.primary.font};
 `;
 
 const Ellipse1Absolute = styled(Ellipse1)`

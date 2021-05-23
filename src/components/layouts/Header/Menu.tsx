@@ -24,9 +24,7 @@ export const Menu = () => {
       <MenuItem name="Courses" />
       <MenuItem name="News" />
       <MenuItem name="Contact" />
-      <CustomButton fontsize="2.4rem" lineHeight="3.6rem">
-        Log in
-      </CustomButton>
+      <CustomButton fontSize="2.4rem" lineHeight="3.6rem" name="Log in" />
     </MenuWrapper>
   );
 };

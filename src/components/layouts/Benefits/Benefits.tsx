@@ -5,8 +5,10 @@ import { ReactComponent as FirstBenefitImage } from "./benefit-1.svg";
 import { ReactComponent as SecondBenefitImage } from "./benefit-2.svg";
 import { ReactComponent as ThirdBenefitImage } from "./benefit-3.svg";
 import { device } from "../../../styles/responsive";
+
+import { laptopLarge, mobileMedium } from "../../../animations/benefitCards";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const BenefitsWrapper = styled.div`
@@ -18,6 +20,7 @@ const BenefitsWrapper = styled.div`
   @media ${device.mobileMedium} {
     display: block;
     padding: 0 2.4rem;
+    margin-top: 3.6rem;
   }
 `;
 
@@ -58,53 +61,10 @@ export const Benefits = () => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": function () {
-        benefitsCardsRef.current.forEach((card) => {
-          gsap.fromTo(
-            card,
-            {
-              opacity: 0,
-              y: "+=100",
-            },
-            {
-              duration: 0.7,
-              delay: 0.5,
-              opacity: 1,
-              y: 0,
-              ease: "none",
-              stagger: 1,
-              scrollTrigger: {
-                id: "benefitCard",
-                trigger: `${card?.id}`,
-                start: "center+=150 20%",
-                markers: true,
-              },
-            }
-          );
-        });
+        benefitsCardsRef.current.forEach((card) => laptopLarge(card));
       },
       "(max-width: 375px)": function () {
-        benefitsCardsRef.current.forEach((card) => {
-          gsap.fromTo(
-            card,
-            {
-              opacity: 0,
-              y: "-=30",
-            },
-            {
-              duration: 0.5,
-              delay: 0.3,
-              opacity: 1,
-              y: 0,
-              ease: "power4.out",
-              scrollTrigger: {
-                id: "benefitCard",
-                trigger: `${card?.className}`,
-                start: "top+=1700 10%",
-                markers: true,
-              },
-            }
-          );
-        });
+        benefitsCardsRef.current.forEach((card) => mobileMedium(card));
       },
     });
   }, []);

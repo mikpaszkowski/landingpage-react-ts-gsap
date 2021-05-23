@@ -5,13 +5,12 @@ import styled from "styled-components";
 import { ReactComponent as Bar } from "./menu-bar.svg";
 import { device } from "../../../styles/responsive";
 import { MenuMobile } from "./MenuMobile";
-import { colors } from "../../../styles/styleConstants";
 
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   left: 50%;
-  z-index: 10;
+  z-index: 9999;
   max-width: 145rem;
   width: 100%;
   display: flex;
@@ -21,7 +20,7 @@ const HeaderWrapper = styled.header`
   margin: 0 auto;
   padding: 2.7rem 16.7rem;
   transform: translateX(-50%);
-  background-color: ${colors.background};
+  background-color: ${({ theme }) => theme.palette.common.background};
 
   @media ${device.mobileMedium} {
     position: relative;
@@ -33,6 +32,7 @@ const MenuBar = styled(Bar)`
   width: 3rem;
   height: 1.7rem;
   cursor: pointer;
+  fill: ${({ theme }) => theme.palette.primary.font};
 
   @media ${device.mobileMedium} {
     display: block;
@@ -40,6 +40,7 @@ const MenuBar = styled(Bar)`
     top: 50%;
     right: 2.4rem;
     transform: translateY(-50%);
+    fill: ${({ theme }) => theme.palette.primary.font};
   }
 `;
 

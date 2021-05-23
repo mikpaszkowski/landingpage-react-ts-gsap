@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly the <CustomInput /> component 1`] = `
+.c0 {
+  position: relative;
+  width: 35rem;
+  height: 5rem;
+  background-color: transparent;
+  font-family: 'Reem Kufi',sans-serif;
+  color: #7C8176;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  border: 1px solid #7C8176;
+  border-radius: 8px;
+  padding: 1.2rem 14rem 1.2rem 1.6rem;
+}
+
+@media (max-width:375px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<div>
+  <input
+    className="c0"
+  />
+</div>
+`;

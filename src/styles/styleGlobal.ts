@@ -1,18 +1,17 @@
 import { createGlobalStyle } from "styled-components";
-import { fontTypes, colors } from "./styleConstants";
-
+import { fontTypes } from "./styleConstants";
 
 const StyleGlobal = createGlobalStyle`
 
     body{
         font-family: ${fontTypes.primaryFont};
-        color: ${colors.primaryFont};
+        color: ${({ theme }) => theme.palette.primary.font};
         margin: 0;
         padding: 0;
         position: relative;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: ${colors.background};
+        background-color: ${({ theme }) => theme.palette.common.background};
     }
 
     *{

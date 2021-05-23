@@ -2,7 +2,6 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { MenuItem } from "./MenuItem";
 import { CustomButton } from "../../ReusableComponents/CustomButton";
-import { colors } from "../../../styles/styleConstants";
 import { IoCloseOutline } from "react-icons/io5";
 
 const slideDown = keyframes`
@@ -22,7 +21,7 @@ const MenuWrapper = styled.div`
   height: 100vh;
   z-index: 999;
   padding: 7rem 2.4rem 5rem 2.4rem;
-  background-color: ${colors.background};
+  background-color: ${({ theme }) => theme.palette.common.background};
   transform: translateY(0);
   animation-name: ${slideDown};
   animation-duration: 0.4s;
@@ -75,7 +74,7 @@ export const MenuMobile = ({
         <MenuItem name="Courses" />
         <MenuItem name="News" />
         <MenuItem name="Contact" />
-        <LogInButton fontsize="2.4rem" lineHeight="3.6rem">
+        <LogInButton fontSize="2.4rem" lineHeight="3.6rem">
           Log in
         </LogInButton>
       </Menu>

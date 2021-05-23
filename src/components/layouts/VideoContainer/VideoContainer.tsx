@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colors, fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/styleConstants";
 import { VideoPlayer } from "./VideoPlayer";
 import { device } from "../../../styles/responsive";
 import gsap from "gsap";
@@ -12,7 +12,7 @@ const VideoContainerWrapper = styled.div`
   z-index: 0;
   width: 100%;
   height: 81.1rem;
-  background-color: ${colors.primaryTheme};
+  background-color: ${({ theme }) => theme.palette.common.theme};
   position: relative;
   overflow: visible;
   margin-bottom: 36.3rem;
@@ -56,7 +56,7 @@ const Text = styled.p`
     font-size: 2rem;
     text-align: left;
     margin: 0;
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.2rem;
   }
 `;
 
@@ -126,6 +126,26 @@ export const VideoContainer = () => {
             scrollTrigger: {
               trigger: `${headlineRef.current?.className}`,
               start: "center+=150 center+=100",
+              markers: true,
+            },
+          }
+        );
+
+        gsap.fromTo(
+          textSectionRef.current,
+          {
+            opacity: 0,
+            y: "+=30",
+          },
+          {
+            duration: 1,
+            delay: 0.6,
+            opacity: 1,
+            y: 0,
+            ease: "expo.out",
+            scrollTrigger: {
+              trigger: `${textSectionRef.current?.className}`,
+              start: "center-=1000 20%",
               markers: true,
             },
           }

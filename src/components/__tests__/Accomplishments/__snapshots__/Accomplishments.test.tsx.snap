@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <Accomplishments /> component 1`] = `
+.c2 {
+  display: block;
+  font-family: 'Rozha One',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8rem;
+  line-height: 117%;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  font-feature-settings: "haln" on;
+  color: #FABD20;
+}
+
+.c3 {
+  display: block;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  margin: 0 4rem;
+  text-align: center;
+  color: #131E07;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 11.1rem;
+  margin: 22rem 21.9rem;
+  will-change: transform;
+}
+
+@media (max-width:375px) {
+  .c1 {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c2 {
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c0 {
+    display: block;
+    margin: 6.4rem 0;
+    padding: 0 2.4rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      230+
+    </h1>
+    <p
+      className="c3"
+    >
+      Scientifically based tests
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      10,000+
+    </h1>
+    <p
+      className="c3"
+    >
+      Medical recommendations
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <h1
+      className="c2"
+    >
+      25M+
+    </h1>
+    <p
+      className="c3"
+    >
+      Students learning
+    </p>
+  </div>
+</div>
+`;

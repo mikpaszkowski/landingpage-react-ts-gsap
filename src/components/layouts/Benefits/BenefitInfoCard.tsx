@@ -1,12 +1,27 @@
 import * as React from "react";
 import styled from "styled-components";
 import { fontTypes } from "../../../styles/styleConstants";
+import { device } from "../../../styles/responsive";
+import { lightTheme } from "../../../styles/theme";
 
 const BenefitInfoCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  height: 45rem;
+  border-radius: 8px;
+  background-color: ${({ theme }) =>
+    theme === lightTheme
+      ? theme.palette.common.white
+      : theme.palette.common.black};
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  will-change: transform;
+
+  &:hover {
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.25);
+    transform: translateY(1rem);
+  }
 `;
 
 const HeadLine = styled.h1`
@@ -19,6 +34,7 @@ const HeadLine = styled.h1`
   line-height: 117%;
   text-align: center;
   font-feature-settings: "haln" on;
+  color: ${({ theme }) => theme.palette.primary.font};
 `;
 
 const Text = styled.p`
@@ -30,6 +46,12 @@ const Text = styled.p`
   text-align: center;
   margin: 0 7rem;
   margin-bottom: 4.5rem;
+
+  @media ${device.mobileMedium} {
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+    width: 23rem;
+  }
 `;
 
 const imageCenteringStyle = {

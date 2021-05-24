@@ -1,10 +1,10 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
-import { menuItems } from "../../staticContents/menu/menuItems";
-import { Menu } from "../../layouts/Header/Menu";
-import { MenuItem } from "../../layouts/Header/MenuItem";
-import { CustomButton } from "../../ReusableComponents/CustomButton";
+import { menuItems } from "../../../data/staticContents/menu/menuItems";
+import { Menu } from "../../../layouts/Header/Menu";
+import { MenuItem } from "../../../layouts/Header/MenuItem";
+import { CustomButton } from "../../CustomButton";
 
 afterEach(() => {
   cleanup();

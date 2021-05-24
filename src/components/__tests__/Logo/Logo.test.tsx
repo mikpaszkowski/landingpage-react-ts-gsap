@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
-import { Logo } from "../../ReusableComponents/Logo/Logo";
+import { Logo } from "../../Logo/Logo";
 
 afterEach(() => {
   cleanup();

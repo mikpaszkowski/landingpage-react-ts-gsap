@@ -1,8 +1,8 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
-import { renderWithDarkTheme, mountWithLightTheme } from "../helpers/index";
-import { BenefitInfoCard } from "../../layouts/Benefits/BenefitInfoCard";
-import { ReactComponent as FirstBenefitImage } from "../../layouts/Benefits/benefit-1.svg";
+import { renderWithDarkTheme } from "../helpers/index";
+import { BenefitInfoCard } from "../../../layouts/Benefits/BenefitInfoCard";
+import { ReactComponent as FirstBenefitImage } from "../../../assets/svg/benefit-1.svg";
 
 afterEach(() => {
   cleanup();
@@ -32,21 +32,3 @@ it("check render correctly <BenefitInfoCard /> component - darkTheme", () => {
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
-
-// describe("check BenfitInfoCard css properties", () => {
-//   const benefitCardsContent = {
-//     id: "1",
-//     headline: "1 FREE chat session",
-//     description: "Start with a free text based chat session online",
-//     image: FirstBenefitImage,
-//     ref: null,
-//   };
-
-//   const wrapper = mountWithLightTheme(
-//     <BenefitInfoCard {...benefitCardsContent} />
-//   ).find(BenefitInfoCard);
-
-//   it("should have #FFFFFF background-color - lightTheme", () => {
-//     expect(wrapper).toHaveStyleRule("background-color", "#FFFFFF");
-//   });
-// });

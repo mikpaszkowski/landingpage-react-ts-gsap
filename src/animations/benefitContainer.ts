@@ -17,7 +17,7 @@ export const laptopLarge = (ref: React.RefObject<HTMLDivElement>) => gsap.fromTo
             trigger: `${ref.current?.className}`,
             start: "center-=650 bottom",
             scrub: 1,
-            markers: true,
+            markers: false,
           },
         }
       );
@@ -38,7 +38,7 @@ export const mobileMedium = (ref: React.RefObject<HTMLDivElement>) =>    gsap.fr
       scrollTrigger: {
         trigger: `${ref.current?.className}`,
         start: "top+=1700 20%",
-        markers: true,
+        markers: false,
       },
     }
   );

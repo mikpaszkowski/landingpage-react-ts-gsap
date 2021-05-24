@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
-import { BenefitContainer } from "../../layouts/Benefits/BenefitContainer";
+import { BenefitContainer } from "../../../layouts/Benefits/BenefitContainer";
 
 afterEach(() => {
   cleanup();

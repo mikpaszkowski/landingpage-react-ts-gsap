@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme } from "../helpers";
-import { Accomplishments } from "../../layouts/Accomplishments/Accomplishments";
+import { Accomplishments } from "../../../layouts/Accomplishments/Accomplishments";
 
 afterEach(() => {
   cleanup();

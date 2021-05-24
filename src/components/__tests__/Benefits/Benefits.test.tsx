@@ -1,11 +1,11 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
-import { Benefits } from "../../layouts/Benefits/Benefits";
-import { BenefitInfoCard } from "../../layouts/Benefits/BenefitInfoCard";
-import { ReactComponent as FirstBenefitImage } from "../../layouts/Benefits/benefit-1.svg";
-import { ReactComponent as SecondBenefitImage } from "../../layouts/Benefits/benefit-2.svg";
-import { ReactComponent as ThirdBenefitImage } from "../../layouts/Benefits/benefit-3.svg";
+import { Benefits } from "../../../layouts/Benefits/Benefits";
+import { BenefitInfoCard } from "../../../layouts/Benefits/BenefitInfoCard";
+import { ReactComponent as FirstBenefitImage } from "../../../assets/svg/benefit-1.svg";
+import { ReactComponent as SecondBenefitImage } from "../../../assets/svg/benefit-2.svg";
+import { ReactComponent as ThirdBenefitImage } from "../../../assets/svg/benefit-3.svg";
 
 afterEach(() => {
   cleanup();

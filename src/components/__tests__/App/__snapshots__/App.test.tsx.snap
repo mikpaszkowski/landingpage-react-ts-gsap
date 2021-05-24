@@ -544,8 +544,11 @@ exports[`check render correctly <App /> component 1`] = `
   will-change: transform;
 }
 
+.c46 {
+  margin-bottom: 3.1rem;
+}
+
 .c46 > li {
-  color: #E5E5E5;
   font-family: 'Reem Kufi',sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -554,7 +557,16 @@ exports[`check render correctly <App /> component 1`] = `
   list-style-type: none;
 }
 
+.c46 > li a {
+  color: #E5E5E5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
 .c46 > li:first-child {
+  text-transform: uppercase;
   color: #7C8176;
   margin-bottom: 1.9rem;
 }
@@ -646,6 +658,7 @@ exports[`check render correctly <App /> component 1`] = `
 }
 
 .c52 {
+  display: block;
   height: 0.1rem;
   background-color: white;
   width: 100%;
@@ -653,6 +666,7 @@ exports[`check render correctly <App /> component 1`] = `
 }
 
 .c53 {
+  display: block;
   position: absolute;
   bottom: 1.6rem;
   right: 16.6rem;
@@ -745,19 +759,18 @@ exports[`check render correctly <App /> component 1`] = `
   width: 3rem;
   height: 1.7rem;
   cursor: pointer;
-  fill: #131E07;
 }
 
 .c1 {
   position: absolute;
-  top: -5rem;
-  right: 16rem;
+  top: -7rem;
+  right: 16.7rem;
   z-index: 2;
   background-color: #131E07;
   border: 1px solid #131E07;
-  -moz-box-shadow: 0px 0px 10px 0px #E5E5E5;
-  -webkit-box-shadow: 0px 0px 10px 0px #E5E5E5;
-  box-shadow: 0px 0px 10px 0px #131E07;
+  -moz-box-shadow: 0px 0px 4px 0px #E5E5E5;
+  -webkit-box-shadow: 0px 0px 4px 0px #E5E5E5;
+  box-shadow: 0px 0px 4px 0px #131E07;
   padding: 0.1rem 0.3rem;
   border-radius: 4rem;
   cursor: pointer;
@@ -1211,7 +1224,7 @@ exports[`check render correctly <App /> component 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin: 5.6rem 0 8rem 0;
+    margin: 5.6rem 0 0 0;
   }
 }
 
@@ -1233,15 +1246,21 @@ exports[`check render correctly <App /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:525px) {
   .c52 {
     display: none;
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:525px) {
   .c53 {
     display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c53 {
+    right: 2.5rem;
   }
 }
 
@@ -1273,7 +1292,20 @@ exports[`check render correctly <App /> component 1`] = `
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    fill: #131E07;
+  }
+}
+
+@media (max-width:1280px) {
+  .c1 {
+    top: -1rem;
+    right: 6rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c1 {
+    top: -1rem;
+    right: 2.4rem;
   }
 }
 
@@ -1434,7 +1466,7 @@ exports[`check render correctly <App /> component 1`] = `
       className="c13"
       onClick={[Function]}
     >
-      menu-bar.svg
+      menu-bar-black.svg
     </svg>
   </header>
   <div
@@ -1541,7 +1573,7 @@ exports[`check render correctly <App /> component 1`] = `
       <img
         alt="Woman as freelance worker does yoga exersice in jumper."
         className="c30"
-        src="/yoga-woman-image.png"
+        src="yoga-woman-image.png"
       />
       <div
         className="c31"
@@ -1686,51 +1718,91 @@ exports[`check render correctly <App /> component 1`] = `
           className="c46"
         >
           <li>
-            Products
+            products
           </li>
           <li>
-            Updates
+            <a
+              href="#"
+            >
+              Updates
+            </a>
           </li>
           <li>
-            Security
+            <a
+              href="#"
+            >
+              Security
+            </a>
           </li>
           <li>
-            Help
-          </li>
-        </ul>
-        <ul
-          className="c46"
-        >
-          <li>
-            Company
-          </li>
-          <li>
-            About
-          </li>
-          <li>
-            Blog
-          </li>
-          <li>
-            Join Us
+            <a
+              href="#"
+            >
+              Help
+            </a>
           </li>
         </ul>
         <ul
           className="c46"
         >
           <li>
-            Help
+            company
           </li>
           <li>
-            Talk to Support
+            <a
+              href="#"
+            >
+              About
+            </a>
           </li>
           <li>
-            Support Docs
+            <a
+              href="#"
+            >
+              Blog
+            </a>
           </li>
           <li>
-            API Docs
+            <a
+              href="#"
+            >
+              Join Us
+            </a>
+          </li>
+        </ul>
+        <ul
+          className="c46"
+        >
+          <li>
+            help
           </li>
           <li>
-            System Status
+            <a
+              href="#"
+            >
+              Talk to Support
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Support Docs
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              API Docs
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              System Status
+            </a>
           </li>
         </ul>
       </div>
@@ -1740,12 +1812,10 @@ exports[`check render correctly <App /> component 1`] = `
         <p>
           Try Medli for free
         </p>
-        <div>
-          <input
-            className="c48 c49"
-            placeholder="Enter your email"
-          />
-        </div>
+        <input
+          className="c48 c49"
+          placeholder="Enter your email"
+        />
         <button
           className="c50 c51"
           fontSize="1.8rem"

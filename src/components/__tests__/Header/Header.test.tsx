@@ -1,10 +1,10 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
-import { Header } from "../../layouts/Header/Header";
-import { Logo } from "../../ReusableComponents/Logo/Logo";
-import { Menu } from "../../layouts/Header/Menu";
-import { MenuMobile } from "../../layouts/Header/MenuMobile";
+import { Header } from "../../../layouts/Header/Header";
+import { Logo } from "../../Logo/Logo";
+import { Menu } from "../../../layouts/Header/Menu";
+import { MenuMobile } from "../../../layouts/Header/MenuMobile";
 
 afterEach(() => {
   cleanup();

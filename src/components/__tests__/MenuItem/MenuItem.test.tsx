@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
-import { MenuItem } from "../../layouts/Header/MenuItem";
+import { MenuItem } from "../../../layouts/Header/MenuItem";
 
 afterEach(() => {
   cleanup();

@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
-import { FooterList } from "../../layouts/Footer/FooterList";
+import { FooterList } from "../../../layouts/Footer/FooterList";
 
 afterEach(() => {
   cleanup();
@@ -15,8 +15,12 @@ test("check render correctly <FooterList /> component", () => {
 describe("check FooterContent component", () => {
   const wrapper = mountWithDarkTheme(<FooterList listName="Company" />);
 
-  test("should contain EmailInputContainer", () => {
+  test("should contain li element", () => {
     expect(wrapper.find("li").length).toEqual(4);
+  });
+
+  test("should contain a tag element", () => {
+    expect(wrapper.find("a").length).toEqual(3);
   });
   test("should contain one ul tag element", () => {
     expect(wrapper.find("ul").length).toEqual(1);

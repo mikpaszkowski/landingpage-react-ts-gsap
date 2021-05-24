@@ -3,19 +3,20 @@ import styled from "styled-components";
 import { DefaultTheme } from "styled-components";
 import { lightTheme } from "../styles/theme";
 import { HiSun, HiMoon } from "react-icons/hi";
+import { device } from "../styles/responsive";
 
 const ToggleButton = styled.button`
   position: absolute;
-  top: -5rem;
-  right: 16rem;
+  top: -7rem;
+  right: 16.7rem;
   z-index: 2;
   background-color: ${({ theme }) => theme.palette.common.black};
   border: 1px solid ${({ theme }) => theme.palette.primary.font};
-  -moz-box-shadow: 0px 0px 10px 0px
+  -moz-box-shadow: 0px 0px 4px 0px
     ${({ theme }) => theme.palette.primary.fontLight};
-  -webkit-box-shadow: 0px 0px 10px 0px
+  -webkit-box-shadow: 0px 0px 4px 0px
     ${({ theme }) => theme.palette.primary.fontLight};
-  box-shadow: 0px 0px 10px 0px ${({ theme }) => theme.palette.primary.font};
+  box-shadow: 0px 0px 4px 0px ${({ theme }) => theme.palette.primary.font};
   padding: 0.1rem 0.3rem;
   border-radius: 4rem;
   cursor: pointer;
@@ -34,6 +35,16 @@ const ToggleButton = styled.button`
     transition: all 0.3s ease-in-out;
     transform: ${(props: ToggleButtonProps) =>
       props.theme === lightTheme ? "translateX(0)" : "translateX(-3rem)"};
+  }
+
+  @media ${device.laptopSmall} {
+    top: -1rem;
+    right: 6rem;
+  }
+
+  @media ${device.tabletLarge} {
+    top: -1rem;
+    right: 2.4rem;
   }
 `;
 

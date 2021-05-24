@@ -5,13 +5,13 @@ import {
   mountWithLightTheme,
   mountWithDarkTheme,
 } from "../helpers/index";
-import { Home } from "../../pages/Home";
-import { LandingHeroContainer } from "../../layouts/LandingContainer/LandingHeroContainer";
-import { Accomplishments } from "../../layouts/Accomplishments/Accomplishments";
-import { VideoContainer } from "../../layouts/VideoContainer/VideoContainer";
-import { BenefitContainer } from "../../layouts/Benefits/BenefitContainer";
-import { Footer } from "../../layouts/Footer/Footer";
-import { Header } from "../../layouts/Header/Header";
+import { Home } from "../../../pages/Home";
+import { LandingHeroContainer } from "../../../layouts/LandingContainer/LandingHeroContainer";
+import { Accomplishments } from "../../../layouts/Accomplishments/Accomplishments";
+import { VideoContainer } from "../../../layouts/VideoContainer/VideoContainer";
+import { BenefitContainer } from "../../../layouts/Benefits/BenefitContainer";
+import { Footer } from "../../../layouts/Footer/Footer";
+import { Header } from "../../../layouts/Header/Header";
 
 afterEach(() => {
   cleanup();

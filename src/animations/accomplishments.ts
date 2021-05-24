@@ -16,7 +16,7 @@ export const laptopLarge = (ref: React.RefObject<HTMLDivElement>) => gsap.fromTo
       scrollTrigger: {
         trigger: `${ref.current?.className}`,
         start: "top 10%",
-        markers: true,
+        markers: false,
       },
     }
   );
@@ -36,7 +36,7 @@ export const laptopLarge = (ref: React.RefObject<HTMLDivElement>) => gsap.fromTo
       scrollTrigger: {
         trigger: `${ref.current?.className}`,
         start: "top 10%",
-        markers: true,
+        markers: false,
       },
     }
   );
@@ -56,7 +56,7 @@ export const mobileMedium = (ref: React.RefObject<HTMLDivElement>) =>  gsap.from
       scrollTrigger: {
         trigger: `${ref.current?.className}`,
         start: "top+=500 20%",
-        markers: true,
+        markers: false,
       },
     }
   );

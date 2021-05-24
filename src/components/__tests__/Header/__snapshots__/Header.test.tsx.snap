@@ -183,7 +183,6 @@ exports[`check render correctly <Header /> component 1`] = `
   width: 3rem;
   height: 1.7rem;
   cursor: pointer;
-  fill: #131E07;
 }
 
 @media (max-width:1110px) {
@@ -214,7 +213,6 @@ exports[`check render correctly <Header /> component 1`] = `
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    fill: #131E07;
   }
 }
 
@@ -327,7 +325,7 @@ exports[`check render correctly <Header /> component 1`] = `
     className="c9"
     onClick={[Function]}
   >
-    menu-bar.svg
+    menu-bar-black.svg
   </svg>
 </header>
 `;

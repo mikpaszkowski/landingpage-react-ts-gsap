@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithDarkTheme, mountWithLightTheme } from "../helpers/index";
-import { CustomButton } from "../../ReusableComponents/CustomButton";
+import { CustomButton } from "../../CustomButton";
 
 afterEach(() => {
   cleanup();

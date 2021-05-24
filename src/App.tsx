@@ -1,10 +1,9 @@
 import React from "react";
-import { useDarkMode } from "./customHooks/useDarkMode";
+import { useTheme } from "./hooks/useTheme";
 import styled from "styled-components";
-import { Home } from "./components/pages/Home";
+import { Home } from "./pages/Home";
 import { ToggleThemeButton } from "./components/ToggleThemeButton";
 import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "./styles/theme";
 import StyleGlobal from "./styles/styleGlobal";
 
 const AppWrapper = styled.div`
@@ -16,17 +15,7 @@ const AppWrapper = styled.div`
 `;
 
 export const App = () => {
-  const [theme, setTheme] = React.useState(lightTheme);
-
-  const toggleTheme = () => {
-    if (theme === lightTheme) {
-      setTheme(darkTheme);
-    } else {
-      setTheme(lightTheme);
-    }
-  };
-
-  //const [theme, toggleTheme] = useDarkMode();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <ThemeProvider theme={theme}>

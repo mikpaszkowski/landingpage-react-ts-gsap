@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
-import { CustomInput } from "../../ReusableComponents/CustomInput";
+import { CustomInput } from "../../CustomInput";
 
 afterEach(() => {
   cleanup();

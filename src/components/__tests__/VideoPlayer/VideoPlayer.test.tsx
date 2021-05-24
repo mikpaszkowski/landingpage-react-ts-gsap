@@ -2,7 +2,7 @@ import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { mount } from "enzyme";
 import renderer from "react-test-renderer";
-import { VideoPlayer } from "../../layouts/VideoContainer/VideoPlayer";
+import { VideoPlayer } from "../../../layouts/VideoContainer/VideoPlayer";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "../../../styles/theme";
 

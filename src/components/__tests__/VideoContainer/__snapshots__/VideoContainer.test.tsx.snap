@@ -217,7 +217,7 @@ exports[`check render correctly <LandingHeroContainer /> component 1`] = `
     <img
       alt="Woman as freelance worker does yoga exersice in jumper."
       className="c4"
-      src="/yoga-woman-image.png"
+      src="yoga-woman-image.png"
     />
     <div
       className="c5"

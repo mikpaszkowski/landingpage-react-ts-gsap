@@ -2,7 +2,7 @@ import renderer from "react-test-renderer";
 import { mount } from "enzyme";
 import { darkTheme, lightTheme } from "../../../styles/theme";
 import { ThemeProvider } from "styled-components";
-import { Logo } from "../../ReusableComponents/Logo/Logo";
+import { Logo } from "../../Logo/Logo";
 
 export function renderWithDarkTheme(component: JSX.Element) {
   return renderer.create(

@@ -23,9 +23,7 @@ exports[`render correctly the <CustomInput /> component 1`] = `
   }
 }
 
-<div>
-  <input
-    className="c0"
-  />
-</div>
+<input
+  className="c0"
+/>
 `;

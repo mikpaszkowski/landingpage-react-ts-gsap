@@ -2,7 +2,7 @@ import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
 import { App } from "../../../App";
-import { Home } from "../../pages/Home";
+import { Home } from "../../../pages/Home";
 
 afterEach(() => {
   cleanup();

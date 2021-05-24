@@ -18,7 +18,7 @@ export const laptopLarge = (ref: HTMLDivElement) =>  gsap.fromTo(
         id: "benefitCard",
         trigger: `${ref?.id}`,
         start: "center+=150 20%",
-        markers: true,
+        markers: false,
       },
     }
   );
@@ -40,7 +40,7 @@ export const mobileMedium = (ref: HTMLDivElement) => gsap.fromTo(
         id: "benefitCard",
         trigger: `${ref?.className}`,
         start: "top+=1700 10%",
-        markers: true,
+        markers: false,
       },
     }
   );

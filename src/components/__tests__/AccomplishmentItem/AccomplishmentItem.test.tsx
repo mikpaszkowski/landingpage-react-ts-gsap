@@ -5,7 +5,7 @@ import {
   mountWithLightTheme,
   mountWithDarkTheme,
 } from "../helpers";
-import { AccomplishmentItem } from "../../layouts/Accomplishments/AccomplishmentItem";
+import { AccomplishmentItem } from "../../../layouts/Accomplishments/AccomplishmentItem";
 
 afterEach(() => {
   cleanup();

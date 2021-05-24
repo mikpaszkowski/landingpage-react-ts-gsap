@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`check render correctly <FooterContent /> component 1`] = `
+.c2 {
+  margin-bottom: 3.1rem;
+}
+
 .c2 > li {
-  color: #E5E5E5;
   font-family: 'Reem Kufi',sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -11,7 +14,16 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   list-style-type: none;
 }
 
+.c2 > li a {
+  color: #E5E5E5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
 .c2 > li:first-child {
+  text-transform: uppercase;
   color: #7C8176;
   margin-bottom: 1.9rem;
 }
@@ -200,7 +212,7 @@ exports[`check render correctly <FooterContent /> component 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin: 5.6rem 0 8rem 0;
+    margin: 5.6rem 0 0 0;
   }
 }
 
@@ -226,51 +238,91 @@ exports[`check render correctly <FooterContent /> component 1`] = `
       className="c2"
     >
       <li>
-        Products
+        products
       </li>
       <li>
-        Updates
+        <a
+          href="#"
+        >
+          Updates
+        </a>
       </li>
       <li>
-        Security
+        <a
+          href="#"
+        >
+          Security
+        </a>
       </li>
       <li>
-        Help
-      </li>
-    </ul>
-    <ul
-      className="c2"
-    >
-      <li>
-        Company
-      </li>
-      <li>
-        About
-      </li>
-      <li>
-        Blog
-      </li>
-      <li>
-        Join Us
+        <a
+          href="#"
+        >
+          Help
+        </a>
       </li>
     </ul>
     <ul
       className="c2"
     >
       <li>
-        Help
+        company
       </li>
       <li>
-        Talk to Support
+        <a
+          href="#"
+        >
+          About
+        </a>
       </li>
       <li>
-        Support Docs
+        <a
+          href="#"
+        >
+          Blog
+        </a>
       </li>
       <li>
-        API Docs
+        <a
+          href="#"
+        >
+          Join Us
+        </a>
+      </li>
+    </ul>
+    <ul
+      className="c2"
+    >
+      <li>
+        help
       </li>
       <li>
-        System Status
+        <a
+          href="#"
+        >
+          Talk to Support
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Support Docs
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          API Docs
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          System Status
+        </a>
       </li>
     </ul>
   </div>
@@ -280,12 +332,10 @@ exports[`check render correctly <FooterContent /> component 1`] = `
     <p>
       Try Medli for free
     </p>
-    <div>
-      <input
-        className="c4 c5"
-        placeholder="Enter your email"
-      />
-    </div>
+    <input
+      className="c4 c5"
+      placeholder="Enter your email"
+    />
     <button
       className="c6 c7"
       fontSize="1.8rem"

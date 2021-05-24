@@ -1,9 +1,9 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
-import { Footer } from "../../layouts/Footer/Footer";
-import { FooterContent } from "../../layouts/Footer/FooterContent";
-import { Logo } from "../../ReusableComponents/Logo/Logo";
+import { Footer } from "../../../layouts/Footer/Footer";
+import { FooterContent } from "../../../layouts/Footer/FooterContent";
+import { Logo } from "../../Logo/Logo";
 
 afterEach(() => {
   cleanup();

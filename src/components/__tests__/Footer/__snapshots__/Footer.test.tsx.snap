@@ -39,8 +39,11 @@ exports[`check render correctly <Footer /> component 1`] = `
   right: 0.3rem;
 }
 
+.c6 {
+  margin-bottom: 3.1rem;
+}
+
 .c6 > li {
-  color: #E5E5E5;
   font-family: 'Reem Kufi',sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -49,7 +52,16 @@ exports[`check render correctly <Footer /> component 1`] = `
   list-style-type: none;
 }
 
+.c6 > li a {
+  color: #E5E5E5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
 .c6 > li:first-child {
+  text-transform: uppercase;
   color: #7C8176;
   margin-bottom: 1.9rem;
 }
@@ -201,6 +213,7 @@ exports[`check render correctly <Footer /> component 1`] = `
 }
 
 .c12 {
+  display: block;
   height: 0.1rem;
   background-color: white;
   width: 100%;
@@ -208,6 +221,7 @@ exports[`check render correctly <Footer /> component 1`] = `
 }
 
 .c13 {
+  display: block;
   position: absolute;
   bottom: 1.6rem;
   right: 16.6rem;
@@ -261,7 +275,7 @@ exports[`check render correctly <Footer /> component 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin: 5.6rem 0 8rem 0;
+    margin: 5.6rem 0 0 0;
   }
 }
 
@@ -283,15 +297,21 @@ exports[`check render correctly <Footer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:525px) {
   .c12 {
     display: none;
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:525px) {
   .c13 {
     display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c13 {
+    right: 2.5rem;
   }
 }
 
@@ -325,51 +345,91 @@ exports[`check render correctly <Footer /> component 1`] = `
         className="c6"
       >
         <li>
-          Products
+          products
         </li>
         <li>
-          Updates
+          <a
+            href="#"
+          >
+            Updates
+          </a>
         </li>
         <li>
-          Security
+          <a
+            href="#"
+          >
+            Security
+          </a>
         </li>
         <li>
-          Help
-        </li>
-      </ul>
-      <ul
-        className="c6"
-      >
-        <li>
-          Company
-        </li>
-        <li>
-          About
-        </li>
-        <li>
-          Blog
-        </li>
-        <li>
-          Join Us
+          <a
+            href="#"
+          >
+            Help
+          </a>
         </li>
       </ul>
       <ul
         className="c6"
       >
         <li>
-          Help
+          company
         </li>
         <li>
-          Talk to Support
+          <a
+            href="#"
+          >
+            About
+          </a>
         </li>
         <li>
-          Support Docs
+          <a
+            href="#"
+          >
+            Blog
+          </a>
         </li>
         <li>
-          API Docs
+          <a
+            href="#"
+          >
+            Join Us
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="c6"
+      >
+        <li>
+          help
         </li>
         <li>
-          System Status
+          <a
+            href="#"
+          >
+            Talk to Support
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Support Docs
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            API Docs
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            System Status
+          </a>
         </li>
       </ul>
     </div>
@@ -379,12 +439,10 @@ exports[`check render correctly <Footer /> component 1`] = `
       <p>
         Try Medli for free
       </p>
-      <div>
-        <input
-          className="c8 c9"
-          placeholder="Enter your email"
-        />
-      </div>
+      <input
+        className="c8 c9"
+        placeholder="Enter your email"
+      />
       <button
         className="c10 c11"
         fontSize="1.8rem"

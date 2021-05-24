@@ -1,9 +1,9 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
-import { FooterContent } from "../../layouts/Footer/FooterContent";
-import { EmailInputContainer } from "../../ReusableComponents/EmailInputContainer";
-import { FooterList } from "../../layouts/Footer/FooterList";
+import { FooterContent } from "../../../layouts/Footer/FooterContent";
+import { EmailInputContainer } from "../../EmailInputContainer";
+import { FooterList } from "../../../layouts/Footer/FooterList";
 
 afterEach(() => {
   cleanup();

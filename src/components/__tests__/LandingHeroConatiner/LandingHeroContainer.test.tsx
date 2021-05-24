@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers";
-import { LandingHeroContainer } from "../../layouts/LandingContainer/LandingHeroContainer";
+import { LandingHeroContainer } from "../../../layouts/LandingContainer/LandingHeroContainer";
 
 afterEach(() => {
   cleanup();

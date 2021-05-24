@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <BenefitInfoCard /> component 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  height: 45rem;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  will-change: transform;
+}
+
+.c0:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  -webkit-transform: translateY(1rem);
+  -ms-transform: translateY(1rem);
+  transform: translateY(1rem);
+}
+
+.c1 {
+  font-family: 'Rozha One',serif;
+  font-size: 2.4rem;
+  padding-top: 8.1rem;
+  margin-bottom: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 117%;
+  text-align: center;
+  font-feature-settings: "haln" on;
+  color: #131E07;
+}
+
+.c2 {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-align: center;
+  margin: 0 7rem;
+  margin-bottom: 4.5rem;
+}
+
+@media (max-width:375px) {
+  .c2 {
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+    width: 23rem;
+  }
+}
+
+<div
+  className="c0"
+  id="1"
+>
+  <svg
+    style={
+      Object {
+        "margin": "0 auto",
+        "marginTop": "4.5rem",
+      }
+    }
+  >
+    benefit-1.svg
+  </svg>
+  <h1
+    className="c1"
+  >
+    1 FREE chat session
+  </h1>
+  <p
+    className="c2"
+  >
+    Start with a free text based chat session online
+  </p>
+</div>
+`;

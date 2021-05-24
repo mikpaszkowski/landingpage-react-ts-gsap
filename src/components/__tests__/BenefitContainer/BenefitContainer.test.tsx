@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { mount } from "enzyme";
 import { BenefitContainer } from "../../layouts/Benefits/BenefitContainer";
 import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "../../../styles/theme";
+import { lightTheme } from "../../../styles/theme";
 
 afterEach(() => {
   cleanup();

@@ -62,7 +62,7 @@ const imageCenteringStyle = {
 interface BenefitInfoCardProps {
   headline: string;
   description: string;
-  image: any;
+  image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   ref?: React.RefObject<HTMLDivElement>;
   id?: string;
 }

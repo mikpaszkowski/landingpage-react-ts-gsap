@@ -2,6 +2,9 @@
 import * as React from "react";
 import styled from "styled-components";
 import { fontTypes } from "../../../styles/styleConstants";
+import { ReactComponent as FirstBenefitImage } from "./benefit-1.svg";
+import { ReactComponent as SecondBenefitImage } from "./benefit-2.svg";
+import { ReactComponent as ThirdBenefitImage } from "./benefit-3.svg";
 import { Benefits } from "./Benefits";
 import { device } from "../../../styles/responsive";
 
@@ -55,6 +58,27 @@ const BenefitsWrapper = styled.div`
   }
 `;
 
+const benefitCardsContent = [
+  {
+    id: 1,
+    headline: "1 FREE chat session",
+    description: "Start with a free text based chat session online",
+    image: FirstBenefitImage,
+  },
+  {
+    id: 2,
+    headline: "Personal Coach",
+    description: "A dedicated coach to help you through your journey",
+    image: SecondBenefitImage,
+  },
+  {
+    id: 3,
+    headline: "Text chat session",
+    description: "An excellent way of preaparing a projects wireframe",
+    image: ThirdBenefitImage,
+  },
+];
+
 export const BenefitContainer = () => {
   const { useRef, useEffect } = React;
 
@@ -75,7 +99,7 @@ export const BenefitContainer = () => {
         We bring you personalized development programs that are backed by
         research and crafted from the years of experience
       </Text>
-      <Benefits />
+      <Benefits benefitCardsContent={benefitCardsContent} />
     </BenefitsWrapper>
   );
 };

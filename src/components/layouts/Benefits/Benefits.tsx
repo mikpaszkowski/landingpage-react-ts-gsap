@@ -1,13 +1,10 @@
 import * as React from "react";
 import { BenefitInfoCard } from "./BenefitInfoCard";
 import styled from "styled-components";
-import { ReactComponent as FirstBenefitImage } from "./benefit-1.svg";
-import { ReactComponent as SecondBenefitImage } from "./benefit-2.svg";
-import { ReactComponent as ThirdBenefitImage } from "./benefit-3.svg";
 import { device } from "../../../styles/responsive";
 
 import { laptopLarge, mobileMedium } from "../../../animations/benefitCards";
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,28 +21,18 @@ const BenefitsWrapper = styled.div`
   }
 `;
 
-const benefitCardsContent = [
-  {
-    id: 1,
-    headline: "1 FREE chat session",
-    description: "Start with a free text based chat session online",
-    image: FirstBenefitImage,
-  },
-  {
-    id: 2,
-    headline: "Personal Coach",
-    description: "A dedicated coach to help you through your journey",
-    image: SecondBenefitImage,
-  },
-  {
-    id: 3,
-    headline: "Text chat session",
-    description: "An excellent way of preaparing a projects wireframe",
-    image: ThirdBenefitImage,
-  },
-];
+interface IBenefitCardsContent {
+  id: number;
+  headline: string;
+  description: string;
+  image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+}
 
-export const Benefits = () => {
+interface BenefitsProps {
+  benefitCardsContent: Array<IBenefitCardsContent>;
+}
+
+export const Benefits = ({ benefitCardsContent }: BenefitsProps) => {
   const { useRef, useEffect } = React;
 
   const benefitsRef = useRef<HTMLDivElement>(null);

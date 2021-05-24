@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <MenuItem /> component 1`] = `
+.c0 {
+  margin: 0.7rem 0;
+}
+
+.c1 {
+  position: relative;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #131E07;
+}
+
+.c1:focus > svg {
+  display: block;
+}
+
+.c2 {
+  display: none;
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1"
+    href="#"
+  >
+    about
+    <svg
+      className="c2"
+    >
+      ellipse-4.svg
+    </svg>
+  </a>
+</div>
+`;

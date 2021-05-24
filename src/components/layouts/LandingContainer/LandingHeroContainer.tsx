@@ -11,7 +11,7 @@ import {
   laptopLargeRightSection,
 } from "../../../animations/landingHeroContainer";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const LandingContainerWrapper = styled.div`
@@ -19,6 +19,9 @@ const LandingContainerWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 27.1rem;
+  position: relative;
+  width: 100%;
+  padding: 0 16.7rem;
 
   @media ${device.laptopLarge} {
     flex-direction: row;
@@ -31,13 +34,16 @@ const LandingContainerWrapper = styled.div`
   @media ${device.mobileMedium} {
     flex-direction: column-reverse;
     margin-top: 4.8rem;
+    padding: 0 2.4rem;
   }
 `;
 
-const HeroHeadline = styled.div`
+const HeroHeadline = styled.h1`
   font-size: 8rem;
   margin-left: 0.2rem;
   line-height: 117%;
+  font-style: normal;
+  font-weight: normal;
   width: 43rem;
 
   @media ${device.mobileMedium} {
@@ -76,6 +82,18 @@ const GetStartedBtn = styled(CustomButton)`
   }
 `;
 
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  margin-top: 4.9rem;
+
+  @media ${device.mobileMedium} {
+    width: auto;
+    margin-top: 4.8rem;
+  }
+`;
+
 const HeroImageStyled = styled(HeroImage)`
   align-self: flex-end;
   width: 67.7rem;
@@ -106,12 +124,6 @@ const Ellipse3Styled = styled(Ellipse3)`
     width: 2.7rem;
     height: 2rem;
   }
-`;
-
-const ImageWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  align-self: flex-end;
 `;
 
 export const LandingHeroContainer = () => {

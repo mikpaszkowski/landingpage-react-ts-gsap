@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LandingContainer } from "../layouts/LandingContainer/LandingContainer";
+import { LandingHeroContainer } from "../layouts/LandingContainer/LandingHeroContainer";
 import { Accomplishments } from "../layouts/Accomplishments/Accomplishments";
 import { VideoContainer } from "../layouts/VideoContainer/VideoContainer";
 import { BenefitContainer } from "../layouts/Benefits/BenefitContainer";
@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <LandingContainer />
+      <LandingHeroContainer />
       <Accomplishments />
       <VideoContainer />
       <BenefitContainer />

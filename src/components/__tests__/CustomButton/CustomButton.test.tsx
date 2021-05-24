@@ -1,23 +1,14 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
-import { mount } from "enzyme";
-import renderer from "react-test-renderer";
+import { renderWithDarkTheme, mountWithLightTheme } from "../helpers/index";
 import { CustomButton } from "../../ReusableComponents/CustomButton";
-import { ThemeProvider } from "styled-components";
-import { lightTheme } from "../../../styles/theme";
 
 afterEach(() => {
   cleanup();
 });
 
-test("check render correctly <CustomButton /> component", () => {
-  const tree = renderer
-    .create(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton />
-      </ThemeProvider>
-    )
-    .toJSON();
+test("check render correctly <CustomButton /> component - darkTheme", () => {
+  const tree = renderWithDarkTheme(<CustomButton />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -27,11 +18,9 @@ describe("check CustomButton properties and props", () => {
       name: "Log in",
     };
 
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(wrapper.prop("name")).toEqual("Log in");
     expect(wrapper.contains("Log in")).toEqual(true);
@@ -41,13 +30,9 @@ describe("check CustomButton properties and props", () => {
     const props = {
       color: "#000000",
     };
-
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
-
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
     expect(wrapper).toHaveStyleRule("background-color", "#000000");
   });
 
@@ -56,11 +41,9 @@ describe("check CustomButton properties and props", () => {
       fontSize: "15rem",
     };
 
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(wrapper).toHaveStyleRule("font-size", "15rem");
   });
@@ -70,11 +53,9 @@ describe("check CustomButton properties and props", () => {
       lineHeight: "3rem",
     };
 
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(wrapper).toHaveStyleRule("line-height", "3rem");
   });
@@ -84,23 +65,22 @@ describe("check CustomButton properties and props", () => {
       borderRadius: "0.8rem",
     };
 
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(wrapper).toHaveStyleRule("border-radius", "0.8rem");
+  });
+
+  test("should have #131E07 font color - lightTheme", () => {
+    const wrapper = mountWithLightTheme(<CustomButton />).find(CustomButton);
+    expect(wrapper).toHaveStyleRule("color", "#131E07");
   });
 });
 
 describe("check props data types", () => {
   test("render component with undefined name props", () => {
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton />).find(CustomButton);
 
     expect(wrapper.prop("name")).toEqual(undefined);
     expect(wrapper.prop("color")).toEqual(undefined);
@@ -113,10 +93,8 @@ describe("check props data types", () => {
     const props = {
       name: "Log in",
     };
-    const CustomButtonElement = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
+    const CustomButtonElement = mountWithLightTheme(
+      <CustomButton {...props} />
     ).find(CustomButton);
 
     expect(typeof CustomButtonElement.prop("name")).toBe("string");
@@ -126,11 +104,9 @@ describe("check props data types", () => {
     const props = {
       color: "#FFFFFF",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(typeof wrapper.prop("color")).toBe("string");
   });
@@ -139,11 +115,9 @@ describe("check props data types", () => {
     const props = {
       color: "#FFFFFF",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(typeof wrapper.prop("color")).toBe("string");
   });
@@ -152,11 +126,9 @@ describe("check props data types", () => {
     const props = {
       fontSize: "30rem",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(typeof wrapper.prop("fontSize")).toBe("string");
   });
@@ -165,11 +137,9 @@ describe("check props data types", () => {
     const props = {
       borderRadius: "0.8rem",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <CustomButton {...props} />
-      </ThemeProvider>
-    ).find(CustomButton);
+    const wrapper = mountWithLightTheme(<CustomButton {...props} />).find(
+      CustomButton
+    );
 
     expect(typeof wrapper.prop("borderRadius")).toBe("string");
   });

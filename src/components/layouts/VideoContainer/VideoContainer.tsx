@@ -2,9 +2,16 @@ import * as React from "react";
 import styled from "styled-components";
 import { fontTypes } from "../../../styles/styleConstants";
 import { VideoPlayer } from "./VideoPlayer";
+
+import {
+  laptopLargeHeadline,
+  laptopLargeText,
+  mobileMediumHeadline,
+  mobileMediumText,
+} from "../../../animations/videoContainer";
 import { device } from "../../../styles/responsive";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const VideoContainerWrapper = styled.div`
@@ -69,87 +76,13 @@ export const VideoContainer = () => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": function () {
-        gsap.fromTo(
-          headlineRef.current,
-          {
-            opacity: 0,
-            x: "-=80",
-          },
-          {
-            duration: 1,
-            delay: 0.2,
-            opacity: 1,
-            x: 0,
-            ease: "easeInOut",
-            scrollTrigger: {
-              trigger: `${headlineRef.current?.className}`,
-              start: "center-=1000 40%",
-              markers: true,
-            },
-          }
-        );
-
-        gsap.fromTo(
-          textSectionRef.current,
-          {
-            opacity: 0,
-            x: "+=80",
-          },
-          {
-            duration: 1,
-            delay: 0.6,
-            opacity: 1,
-            x: 0,
-            ease: "expo.out",
-            scrollTrigger: {
-              trigger: `${textSectionRef.current?.className}`,
-              start: "center-=1000 20%",
-              markers: true,
-            },
-          }
-        );
+        laptopLargeHeadline(headlineRef);
+        laptopLargeText(textSectionRef);
       },
 
       "(max-width: 375px)": function () {
-        gsap.fromTo(
-          headlineRef.current,
-          {
-            opacity: 0,
-            y: "-=30",
-          },
-          {
-            duration: 1,
-            delay: 0.5,
-            opacity: 1,
-            y: 0,
-            ease: "expo.out",
-            scrollTrigger: {
-              trigger: `${headlineRef.current?.className}`,
-              start: "center+=150 center+=100",
-              markers: true,
-            },
-          }
-        );
-
-        gsap.fromTo(
-          textSectionRef.current,
-          {
-            opacity: 0,
-            y: "+=30",
-          },
-          {
-            duration: 1,
-            delay: 0.6,
-            opacity: 1,
-            y: 0,
-            ease: "expo.out",
-            scrollTrigger: {
-              trigger: `${textSectionRef.current?.className}`,
-              start: "center-=1000 20%",
-              markers: true,
-            },
-          }
-        );
+        mobileMediumHeadline(headlineRef);
+        mobileMediumText(textSectionRef);
       },
     });
   }, []);

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`check render correctly <CustomButton /> component 1`] = `
+exports[`check render correctly <CustomButton /> component - darkTheme 1`] = `
 .c0 {
   position: relative;
   display: -webkit-box;
@@ -24,6 +24,7 @@ exports[`check render correctly <CustomButton /> component 1`] = `
   font-style: normal;
   font-weight: normal;
   line-height: 3.6rem;
+  color: #131E07;
   border: none;
   border-radius: 8px;
   background-color: #FABD20;

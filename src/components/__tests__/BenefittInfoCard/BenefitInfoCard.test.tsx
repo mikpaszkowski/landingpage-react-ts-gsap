@@ -1,11 +1,7 @@
-import React, { useRef } from "react";
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
-import renderer from "react-test-renderer";
-import { mount } from "enzyme";
+import { renderWithDarkTheme, mountWithLightTheme } from "../helpers/index";
 import { BenefitInfoCard } from "../../layouts/Benefits/BenefitInfoCard";
-import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "../../../styles/theme";
 import { ReactComponent as FirstBenefitImage } from "../../layouts/Benefits/benefit-1.svg";
 
 afterEach(() => {
@@ -22,7 +18,7 @@ window.matchMedia =
     };
   };
 
-it("check render correctly <BenefitInfoCard /> component", () => {
+it("check render correctly <BenefitInfoCard /> component - darkTheme", () => {
   const benefitCardsContent = {
     id: "1",
     headline: "1 FREE chat session",
@@ -31,32 +27,26 @@ it("check render correctly <BenefitInfoCard /> component", () => {
     ref: null,
   };
 
-  const tree = renderer
-    .create(
-      <ThemeProvider theme={lightTheme}>
-        <BenefitInfoCard {...benefitCardsContent} />
-      </ThemeProvider>
-    )
-    .toJSON();
+  const tree = renderWithDarkTheme(
+    <BenefitInfoCard {...benefitCardsContent} />
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-describe("check BenfitInfoCard css properties", () => {
-  const benefitCardsContent = {
-    id: "1",
-    headline: "1 FREE chat session",
-    description: "Start with a free text based chat session online",
-    image: FirstBenefitImage,
-    ref: null,
-  };
+// describe("check BenfitInfoCard css properties", () => {
+//   const benefitCardsContent = {
+//     id: "1",
+//     headline: "1 FREE chat session",
+//     description: "Start with a free text based chat session online",
+//     image: FirstBenefitImage,
+//     ref: null,
+//   };
 
-  const wrapper = mount(
-    <ThemeProvider theme={lightTheme}>
-      <BenefitInfoCard {...benefitCardsContent} />
-    </ThemeProvider>
-  ).find(BenefitInfoCard);
+//   const wrapper = mountWithLightTheme(
+//     <BenefitInfoCard {...benefitCardsContent} />
+//   ).find(BenefitInfoCard);
 
-  //   it("should have #FFFFFF background-color - lightTheme", () => {
-  //     expect(wrapper.find("c0")).toHaveStyleRule("background-color", "#FFFFFF");
-  //   });
-});
+//   it("should have #FFFFFF background-color - lightTheme", () => {
+//     expect(wrapper).toHaveStyleRule("background-color", "#FFFFFF");
+//   });
+// });

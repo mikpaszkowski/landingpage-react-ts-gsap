@@ -1,10 +1,11 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
-import renderer from "react-test-renderer";
-import { mount } from "enzyme";
+import {
+  renderWithLightTheme,
+  mountWithLightTheme,
+  mountWithDarkTheme,
+} from "../helpers";
 import { AccomplishmentItem } from "../../layouts/Accomplishments/AccomplishmentItem";
-import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "../../../styles/theme";
 
 afterEach(() => {
   cleanup();
@@ -15,13 +16,7 @@ it("check render correctly <AccomplishmentItem /> component", () => {
     headline: "10,000+",
     description: "Medical recommendations",
   };
-  const tree = renderer
-    .create(
-      <ThemeProvider theme={lightTheme}>
-        <AccomplishmentItem {...props} />
-      </ThemeProvider>
-    )
-    .toJSON();
+  const tree = renderWithLightTheme(<AccomplishmentItem {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -31,11 +26,9 @@ describe("check AccomplishmentItem props", () => {
       headline: "10,000+",
       description: "Medical recommendations",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <AccomplishmentItem {...props} />
-      </ThemeProvider>
-    ).find(AccomplishmentItem);
+    const wrapper = mountWithLightTheme(<AccomplishmentItem {...props} />).find(
+      AccomplishmentItem
+    );
     expect(wrapper.find("h1").text()).toEqual(props.headline);
   });
 
@@ -44,11 +37,9 @@ describe("check AccomplishmentItem props", () => {
       headline: "10,000+",
       description: "Medical recommendations",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <AccomplishmentItem {...props} />
-      </ThemeProvider>
-    ).find(AccomplishmentItem);
+    const wrapper = mountWithLightTheme(<AccomplishmentItem {...props} />).find(
+      AccomplishmentItem
+    );
     expect(wrapper.find("p").text()).toEqual(props.description);
   });
 });
@@ -59,11 +50,9 @@ describe("check AccomplishmentItem props data type", () => {
       headline: "10,000+",
       description: "Medical recommendations",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <AccomplishmentItem {...props} />
-      </ThemeProvider>
-    ).find(AccomplishmentItem);
+    const wrapper = mountWithLightTheme(<AccomplishmentItem {...props} />).find(
+      AccomplishmentItem
+    );
     expect(typeof wrapper.prop("headline")).toEqual("string");
   });
 
@@ -72,11 +61,9 @@ describe("check AccomplishmentItem props data type", () => {
       headline: "10,000+",
       description: "Medical recommendations",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <AccomplishmentItem {...props} />
-      </ThemeProvider>
-    ).find(AccomplishmentItem);
+    const wrapper = mountWithLightTheme(<AccomplishmentItem {...props} />).find(
+      AccomplishmentItem
+    );
     expect(typeof wrapper.prop("description")).toEqual("string");
   });
 });
@@ -87,11 +74,9 @@ describe("check AccomplishmentItem css properties", () => {
       headline: "10,000+",
       description: "Medical recommendations",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <AccomplishmentItem {...props} />
-      </ThemeProvider>
-    ).find(AccomplishmentItem);
+    const wrapper = mountWithLightTheme(<AccomplishmentItem {...props} />).find(
+      AccomplishmentItem
+    );
     expect(wrapper.find("h1")).toHaveStyleRule("color", "#FABD20");
   });
 
@@ -101,25 +86,32 @@ describe("check AccomplishmentItem css properties", () => {
         headline: "10,000+",
         description: "Medical recommendations",
       };
-      const wrapper = mount(
-        <ThemeProvider theme={darkTheme}>
-          <AccomplishmentItem {...props} />
-        </ThemeProvider>
+      const wrapper = mountWithDarkTheme(
+        <AccomplishmentItem {...props} />
       ).find(AccomplishmentItem);
       expect(wrapper.find("p")).toHaveStyleRule("color", "#FFFFFF");
     });
 
-    test("theme set to light - #131E07", () => {
+    test("theme set to light - p color #131E07", () => {
       const props = {
         headline: "10,000+",
         description: "Medical recommendations",
       };
-      const wrapper = mount(
-        <ThemeProvider theme={lightTheme}>
-          <AccomplishmentItem {...props} />
-        </ThemeProvider>
+      const wrapper = mountWithLightTheme(
+        <AccomplishmentItem {...props} />
       ).find(AccomplishmentItem);
       expect(wrapper.find("p")).toHaveStyleRule("color", "#131E07");
+    });
+
+    test("theme set to dark - p color #FFFFFF", () => {
+      const props = {
+        headline: "10,000+",
+        description: "Medical recommendations",
+      };
+      const wrapper = mountWithDarkTheme(
+        <AccomplishmentItem {...props} />
+      ).find(AccomplishmentItem);
+      expect(wrapper.find("p")).toHaveStyleRule("color", "#FFFFFF");
     });
   });
 });

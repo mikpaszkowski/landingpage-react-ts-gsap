@@ -2,6 +2,7 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { MenuItem } from "./MenuItem";
 import { CustomButton } from "../../ReusableComponents/CustomButton";
+import { menuItems, IMenuItems } from "../../../assets/menuItems/menuItems";
 import { IoCloseOutline } from "react-icons/io5";
 
 const slideDown = keyframes`
@@ -60,20 +61,20 @@ const CloseButton = styled(IoCloseOutline)`
 interface MenuMobileProps {
   isMenuOpen: boolean | null;
   closeMenuMobile: () => void;
+  menuItems: Array<IMenuItems>;
 }
 
 export const MenuMobile = ({
   isMenuOpen,
   closeMenuMobile,
+  menuItems,
 }: MenuMobileProps) => {
   return isMenuOpen ? (
     <MenuWrapper>
       <Menu>
-        <MenuItem name="Home" />
-        <MenuItem name="About" />
-        <MenuItem name="Courses" />
-        <MenuItem name="News" />
-        <MenuItem name="Contact" />
+        {menuItems.forEach(({ id, name }) => {
+          <MenuItem key={id} name={name} />;
+        })}
         <LogInButton fontSize="2.4rem" lineHeight="3.6rem">
           Log in
         </LogInButton>

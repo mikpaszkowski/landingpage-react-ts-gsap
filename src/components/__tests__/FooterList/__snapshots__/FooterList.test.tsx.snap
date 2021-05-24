@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <FooterList /> component 1`] = `
+.c0 > li {
+  color: #E5E5E5;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  list-style-type: none;
+}
+
+.c0 > li:first-child {
+  color: #7C8176;
+  margin-bottom: 1.9rem;
+}
+
+@media (max-width:375px) {
+  .c0 {
+    margin-bottom: 3.1rem;
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    Company
+  </li>
+  <li>
+    About
+  </li>
+  <li>
+    Blog
+  </li>
+  <li>
+    Join Us
+  </li>
+</ul>
+`;

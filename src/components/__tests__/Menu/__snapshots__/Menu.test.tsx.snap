@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <Menu /> component 1`] = `
+.c1 {
+  margin: 0.7rem 0;
+}
+
+.c2 {
+  position: relative;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #131E07;
+}
+
+.c2:focus > svg {
+  display: block;
+}
+
+.c3 {
+  display: none;
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.7rem 3.1rem;
+  font-family: 'Reem Kufi',sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.6rem;
+  color: #131E07;
+  border: none;
+  border-radius: 8px;
+  background-color: #FABD20;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.c4::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: black;
+  color: #FABD20;
+  -webkit-transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c4:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  color: #FABD20;
+}
+
+.c4:hover::after {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 64.4rem;
+}
+
+@media (max-width:375px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="#"
+    >
+      Home
+      <svg
+        className="c3"
+      >
+        ellipse-4.svg
+      </svg>
+    </a>
+  </div>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="#"
+    >
+      About
+      <svg
+        className="c3"
+      >
+        ellipse-4.svg
+      </svg>
+    </a>
+  </div>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="#"
+    >
+      Courses
+      <svg
+        className="c3"
+      >
+        ellipse-4.svg
+      </svg>
+    </a>
+  </div>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="#"
+    >
+      News
+      <svg
+        className="c3"
+      >
+        ellipse-4.svg
+      </svg>
+    </a>
+  </div>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="#"
+    >
+      Contact
+      <svg
+        className="c3"
+      >
+        ellipse-4.svg
+      </svg>
+    </a>
+  </div>
+  <button
+    className="c4"
+    fontSize="2.4rem"
+  >
+    Log in
+  </button>
+</div>
+`;

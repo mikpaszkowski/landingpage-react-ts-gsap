@@ -3,6 +3,7 @@ import { Logo } from "../../ReusableComponents/Logo/Logo";
 import { Menu } from "./Menu";
 import styled from "styled-components";
 import { ReactComponent as Bar } from "./menu-bar.svg";
+import { menuItems } from "../../../assets/menuItems/menuItems";
 import { device } from "../../../styles/responsive";
 import { MenuMobile } from "./MenuMobile";
 
@@ -56,9 +57,13 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <Logo />
-      <Menu />
+      <Menu menuItems={menuItems} />
       <MenuBar onClick={handleClick} />
-      <MenuMobile isMenuOpen={menuBarOpen} closeMenuMobile={handleClick} />
+      <MenuMobile
+        isMenuOpen={menuBarOpen}
+        closeMenuMobile={handleClick}
+        menuItems={menuItems}
+      />
     </HeaderWrapper>
   );
 };

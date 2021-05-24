@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <LandingHeroContainer /> component 1`] = `
+.c5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13rem;
+  height: 13rem;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  background-color: rgba(254,244,230,0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  will-change: transform;
+}
+
+.c5:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.2);
+  background-color: rgba(254,244,230,1);
+}
+
+.c6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.c7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin-left: 0.35rem;
+}
+
+.c8 {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin-left: 0.35rem;
+}
+
+.c3 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+  margin: 0 10rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background: linear-gradient( 180deg, rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.06) 100% );
+}
+
+.c4 {
+  position: relative;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.c0 {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 81.1rem;
+  background-color: #FABD20;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 36.3rem;
+}
+
+.c1 {
+  font-family: 'Rozha One',serif;
+  font-size: 8rem;
+  padding-top: 6.4rem;
+  margin: 0 30rem 4rem 30rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 117%;
+  text-align: center;
+  font-feature-settings: "haln" on;
+}
+
+.c2 {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  margin: 4rem 53.5rem 5.6rem 53.5rem;
+}
+
+@media (max-width:375px) {
+  .c5 {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c6 {
+    width: 3.48rem;
+    height: 3.48rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c7 {
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
+  .c8 {
+    display: block;
+  }
+}
+
+@media (max-width:375px) {
+  .c3 {
+    margin: 0 auto;
+    padding: 0;
+    height: 15.7rem;
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c0 {
+    padding: 0 2.4rem;
+    margin-bottom: 13.7rem;
+    height: 49.7rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c1 {
+    font-size: 5rem;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 3.7rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 7.2rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1"
+  >
+    What our community is saying?
+  </h1>
+  <p
+    className="c2"
+  >
+    A mission-driven company that invest in and builds healthier living
+  </p>
+  <div
+    className="c3"
+  >
+    <img
+      alt="Woman as freelance worker does yoga exersice in jumper."
+      className="c4"
+      src="/yoga-woman-image.png"
+    />
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <svg
+          className="c7"
+        >
+          playButtonPolygon.svg
+        </svg>
+      </div>
+      <svg
+        className="c8"
+      >
+        playButtonPolygonSmall.svg
+      </svg>
+    </div>
+  </div>
+</div>
+`;

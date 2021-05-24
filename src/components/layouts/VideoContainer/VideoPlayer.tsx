@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { PlayButton } from "./PlayButton";
 import { device } from "../../../styles/responsive";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const VideoPlayerWrapper = styled.div`

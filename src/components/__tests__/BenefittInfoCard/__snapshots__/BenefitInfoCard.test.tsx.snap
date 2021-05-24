@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`check render correctly <BenefitInfoCard /> component 1`] = `
+exports[`check render correctly <BenefitInfoCard /> component - darkTheme 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,7 +18,7 @@ exports[`check render correctly <BenefitInfoCard /> component 1`] = `
   align-self: center;
   height: 45rem;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #131E07;
   -webkit-transition: all 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: all 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   will-change: transform;
@@ -41,7 +41,7 @@ exports[`check render correctly <BenefitInfoCard /> component 1`] = `
   line-height: 117%;
   text-align: center;
   font-feature-settings: "haln" on;
-  color: #131E07;
+  color: #FFFFFF;
 }
 
 .c2 {

@@ -1,10 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
-import renderer from "react-test-renderer";
-import { mount } from "enzyme";
+import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
 import { BenefitContainer } from "../../layouts/Benefits/BenefitContainer";
-import { ThemeProvider } from "styled-components";
-import { lightTheme } from "../../../styles/theme";
 
 afterEach(() => {
   cleanup();
@@ -27,13 +24,7 @@ beforeAll(() => {
 });
 
 it("check render correctly <AccomplishmentItem /> component", () => {
-  const tree = renderer
-    .create(
-      <ThemeProvider theme={lightTheme}>
-        <BenefitContainer />
-      </ThemeProvider>
-    )
-    .toJSON();
+  const tree = renderWithLightTheme(<BenefitContainer />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -44,11 +35,9 @@ describe("check BenfitContainer", () => {
       text: `We bring you personalized development programs that are backed by
             research and crafted from the years of experience`,
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <BenefitContainer />
-      </ThemeProvider>
-    ).find(BenefitContainer);
+    const wrapper = mountWithLightTheme(<BenefitContainer />).find(
+      BenefitContainer
+    );
     expect(wrapper.find("h1").at(0).text()).toEqual(content.headline);
   });
 
@@ -57,11 +46,9 @@ describe("check BenfitContainer", () => {
       headline: "What you’re getting?",
       text: "We bring you personalized development programs that are backed by research and crafted from the years of experience",
     };
-    const wrapper = mount(
-      <ThemeProvider theme={lightTheme}>
-        <BenefitContainer />
-      </ThemeProvider>
-    ).find(BenefitContainer);
+    const wrapper = mountWithLightTheme(<BenefitContainer />).find(
+      BenefitContainer
+    );
     expect(wrapper.find("span").at(0).text()).toEqual(content.text);
   });
 });

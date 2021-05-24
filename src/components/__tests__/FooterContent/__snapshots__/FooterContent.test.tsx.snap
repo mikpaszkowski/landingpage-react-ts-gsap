@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <FooterContent /> component 1`] = `
+.c2 > li {
+  color: #E5E5E5;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  list-style-type: none;
+}
+
+.c2 > li:first-child {
+  color: #7C8176;
+  margin-bottom: 1.9rem;
+}
+
+.c4 {
+  position: relative;
+  width: 35rem;
+  height: 5rem;
+  background-color: transparent;
+  font-family: 'Reem Kufi',sans-serif;
+  color: #7C8176;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  border: 1px solid #7C8176;
+  border-radius: 8px;
+  padding: 1.2rem 14rem 1.2rem 1.6rem;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.7rem 3.1rem;
+  font-family: 'Reem Kufi',sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.7rem;
+  color: #131E07;
+  border: none;
+  border-radius: 4px;
+  background-color: #FABD20;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.c5::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: black;
+  color: #FABD20;
+  -webkit-transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c5:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  color: #FABD20;
+}
+
+.c5:hover::after {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.c3 {
+  position: relative;
+}
+
+.c3 > p {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-bottom: 1.6rem;
+  color: #7C8176;
+}
+
+.c6 {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  padding: 0.3rem 1.6rem 0.4rem 1.6rem;
+  border-radius: 4px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin: 5.1rem 0 8rem 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 ul:nth-child(2) {
+  margin-right: 14rem;
+}
+
+.c1 ul:first-child {
+  margin-right: 5.8rem;
+}
+
+@media (max-width:375px) {
+  .c2 {
+    margin-bottom: 3.1rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c4 {
+    width: 100%;
+  }
+}
+
+@media (max-width:375px) {
+  .c6 {
+    position: relative;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    padding: 1.6rem 8rem 1.6rem 8rem;
+    margin: 1.6rem 0 6.3rem 0;
+  }
+}
+
+@media (max-width:375px) {
+  .c0 {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 5.6rem 0 8rem 0;
+  }
+}
+
+@media (max-width:375px) {
+  .c1 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <ul
+      className="c2"
+    >
+      <li>
+        Products
+      </li>
+      <li>
+        Updates
+      </li>
+      <li>
+        Security
+      </li>
+      <li>
+        Help
+      </li>
+    </ul>
+    <ul
+      className="c2"
+    >
+      <li>
+        Company
+      </li>
+      <li>
+        About
+      </li>
+      <li>
+        Blog
+      </li>
+      <li>
+        Join Us
+      </li>
+    </ul>
+    <ul
+      className="c2"
+    >
+      <li>
+        Help
+      </li>
+      <li>
+        Talk to Support
+      </li>
+      <li>
+        Support Docs
+      </li>
+      <li>
+        API Docs
+      </li>
+      <li>
+        System Status
+      </li>
+    </ul>
+  </div>
+  <div
+    className="c3"
+  >
+    <p>
+      Try Medli for free
+    </p>
+    <div>
+      <input
+        className="c4"
+        placeholder="Enter your email"
+      />
+    </div>
+    <button
+      className="c5 c6"
+      fontSize="1.8rem"
+    >
+      Get started
+    </button>
+  </div>
+</div>
+`;

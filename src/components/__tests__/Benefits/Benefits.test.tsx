@@ -1,11 +1,8 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
-import renderer from "react-test-renderer";
-import { mount } from "enzyme";
+import { renderWithLightTheme, mountWithLightTheme } from "../helpers/index";
 import { Benefits } from "../../layouts/Benefits/Benefits";
 import { BenefitInfoCard } from "../../layouts/Benefits/BenefitInfoCard";
-import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "../../../styles/theme";
 import { ReactComponent as FirstBenefitImage } from "../../layouts/Benefits/benefit-1.svg";
 import { ReactComponent as SecondBenefitImage } from "../../layouts/Benefits/benefit-2.svg";
 import { ReactComponent as ThirdBenefitImage } from "../../layouts/Benefits/benefit-3.svg";
@@ -33,13 +30,9 @@ it("check render correctly <Benefits /> component", () => {
       image: FirstBenefitImage,
     },
   ];
-  const tree = renderer
-    .create(
-      <ThemeProvider theme={lightTheme}>
-        <Benefits benefitCardsContent={benefitCardsContent} />
-      </ThemeProvider>
-    )
-    .toJSON();
+  const tree = renderWithLightTheme(
+    <Benefits benefitCardsContent={benefitCardsContent} />
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -65,10 +58,8 @@ describe("check Benfits", () => {
     },
   ];
 
-  const wrapper = mount(
-    <ThemeProvider theme={lightTheme}>
-      <Benefits benefitCardsContent={benefitCardsContent} />
-    </ThemeProvider>
+  const wrapper = mountWithLightTheme(
+    <Benefits benefitCardsContent={benefitCardsContent} />
   ).find(Benefits);
 
   test("should contain three BenefitInfoCards", () => {

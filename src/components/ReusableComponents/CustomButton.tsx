@@ -16,6 +16,7 @@ const Button = styled.button`
   font-weight: normal;
   line-height: ${(props: ButtonProps) =>
     props.lineHeight ? props.lineHeight : "3.6rem"};
+  color: ${({ theme }) => theme.palette.common.black};
   border: none;
   border-radius: ${(props: ButtonProps) =>
     props.borderRadius ? props.borderRadius : "8px"};

@@ -2,7 +2,7 @@ import * as React from "react";
 import { BenefitInfoCard } from "./BenefitInfoCard";
 import styled from "styled-components";
 import { device } from "../../../styles/responsive";
-
+import { IBenefitCardsContent } from "../../staticContents/benefits/beneifts";
 import { laptopLarge, mobileMedium } from "../../../animations/benefitCards";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -20,18 +20,11 @@ const BenefitsWrapper = styled.div`
   }
 `;
 
-interface IBenefitCardsContent {
-  id: number;
-  headline: string;
-  description: string;
-  image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-}
-
-interface BenefitsProps {
+interface IBenefitsProps {
   benefitCardsContent: Array<IBenefitCardsContent>;
 }
 
-export const Benefits = ({ benefitCardsContent }: BenefitsProps) => {
+export const Benefits = ({ benefitCardsContent }: IBenefitsProps) => {
   const { useRef, useEffect } = React;
 
   const benefitsRef = useRef<HTMLDivElement>(null);

@@ -34,7 +34,7 @@ const Description = styled.p`
   color: ${({ theme }) => theme.palette.primary.font};
 `;
 
-interface AccomplishmentProps {
+interface IAccomplishmentProps {
   headline: string;
   description: string;
 }
@@ -42,7 +42,7 @@ interface AccomplishmentProps {
 export const AccomplishmentItem = ({
   headline,
   description,
-}: AccomplishmentProps) => {
+}: IAccomplishmentProps) => {
   return (
     <AccomplishmentItemWrapper>
       <Headline>{headline}</Headline>

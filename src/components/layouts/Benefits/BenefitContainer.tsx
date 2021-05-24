@@ -2,12 +2,9 @@
 import * as React from "react";
 import styled from "styled-components";
 import { fontTypes } from "../../../styles/constants";
-import { ReactComponent as FirstBenefitImage } from "./benefit-1.svg";
-import { ReactComponent as SecondBenefitImage } from "./benefit-2.svg";
-import { ReactComponent as ThirdBenefitImage } from "./benefit-3.svg";
 import { Benefits } from "./Benefits";
 import { device } from "../../../styles/responsive";
-
+import { benefitCardsContent } from "../../staticContents/benefits/beneifts";
 import {
   laptopLarge,
   mobileMedium,
@@ -61,27 +58,6 @@ const BenefitsWrapper = styled.div`
     margin: 0 2.4rem 6.4rem 2.4rem;
   }
 `;
-
-const benefitCardsContent = [
-  {
-    id: 1,
-    headline: "1 FREE chat session",
-    description: "Start with a free text based chat session online",
-    image: FirstBenefitImage,
-  },
-  {
-    id: 2,
-    headline: "Personal Coach",
-    description: "A dedicated coach to help you through your journey",
-    image: SecondBenefitImage,
-  },
-  {
-    id: 3,
-    headline: "Text chat session",
-    description: "An excellent way of preaparing a projects wireframe",
-    image: ThirdBenefitImage,
-  },
-];
 
 export const BenefitContainer = () => {
   const { useRef, useEffect } = React;

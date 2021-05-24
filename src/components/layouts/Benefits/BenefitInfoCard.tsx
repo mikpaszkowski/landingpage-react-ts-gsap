@@ -63,7 +63,7 @@ const imageCenteringStyle = {
   marginTop: "4.5rem",
 };
 
-interface BenefitInfoCardProps {
+interface IBenefitInfoCardProps {
   headline: string;
   description: string;
   image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
@@ -73,7 +73,7 @@ interface BenefitInfoCardProps {
 
 export const BenefitInfoCard = React.forwardRef<
   HTMLDivElement,
-  BenefitInfoCardProps
+  IBenefitInfoCardProps
 >(({ image, id, headline, description }, ref) => {
   const BenefitImage = image;
 

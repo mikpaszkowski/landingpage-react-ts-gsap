@@ -56,6 +56,12 @@ exports[`check render correctly <BenefitInfoCard /> component - darkTheme 1`] = 
 }
 
 @media (max-width:375px) {
+  .c0 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width:375px) {
   .c2 {
     margin: 0 auto;
     margin-bottom: 4.5rem;

@@ -70,7 +70,7 @@ exports[`check render correctly <Footer /> component 1`] = `
   padding: 1.2rem 14rem 1.2rem 1.6rem;
 }
 
-.c9 {
+.c10 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -104,7 +104,7 @@ exports[`check render correctly <Footer /> component 1`] = `
   will-change: transform;
 }
 
-.c9::after {
+.c10::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -119,12 +119,12 @@ exports[`check render correctly <Footer /> component 1`] = `
   transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c9:hover {
+.c10:hover {
   box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
   color: #FABD20;
 }
 
-.c9:hover::after {
+.c10:hover::after {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -144,7 +144,7 @@ exports[`check render correctly <Footer /> component 1`] = `
   color: #7C8176;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   right: 0.8rem;
   bottom: 0.8rem;
@@ -200,14 +200,14 @@ exports[`check render correctly <Footer /> component 1`] = `
   background-color: #131E07;
 }
 
-.c11 {
+.c12 {
   height: 0.1rem;
   background-color: white;
   width: 100%;
   opacity: 0.2;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   bottom: 1.6rem;
   right: 16.6rem;
@@ -228,8 +228,14 @@ exports[`check render correctly <Footer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
-  .c10 {
+@media (max-width:1110px) {
+  .c7 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c11 {
     position: relative;
     width: 100%;
     right: 0;
@@ -240,7 +246,13 @@ exports[`check render correctly <Footer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
+  .c9 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
   .c4 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
@@ -253,7 +265,7 @@ exports[`check render correctly <Footer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
   .c5 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -265,20 +277,20 @@ exports[`check render correctly <Footer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:768px) {
   .c0 {
     padding: 6.4rem 2.4rem 5.5rem 2.4rem;
   }
 }
 
 @media (max-width:375px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media (max-width:375px) {
-  .c12 {
+  .c13 {
     display: none;
   }
 }
@@ -369,12 +381,12 @@ exports[`check render correctly <Footer /> component 1`] = `
       </p>
       <div>
         <input
-          className="c8"
+          className="c8 c9"
           placeholder="Enter your email"
         />
       </div>
       <button
-        className="c9 c10"
+        className="c10 c11"
         fontSize="1.8rem"
       >
         Get started
@@ -382,10 +394,10 @@ exports[`check render correctly <Footer /> component 1`] = `
     </div>
   </div>
   <div
-    className="c11"
+    className="c12"
   />
   <p
-    className="c12"
+    className="c13"
   >
     Therms & Conditions
   </p>

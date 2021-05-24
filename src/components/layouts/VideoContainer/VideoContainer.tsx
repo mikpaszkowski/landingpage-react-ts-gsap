@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/constants";
 import { VideoPlayer } from "./VideoPlayer";
 
 import {
@@ -24,7 +24,15 @@ const VideoContainerWrapper = styled.div`
   overflow: visible;
   margin-bottom: 36.3rem;
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
+    height: 43.7rem;
+  }
+
+  @media ${device.tablet} {
+    height: 50rem;
+  }
+
+  @media ${device.mobileLarge} {
     padding: 0 2.4rem;
     margin-bottom: 13.7rem;
     height: 49.7rem;
@@ -42,7 +50,13 @@ const HeadLine = styled.h1`
   text-align: center;
   font-feature-settings: "haln" on;
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 8rem 3.7rem 8rem;
+  }
+
+  @media ${device.mobileLarge} {
     font-size: 5rem;
     text-align: left;
     margin: 0;
@@ -59,11 +73,17 @@ const Text = styled.p`
   text-align: center;
   margin: 4rem 53.5rem 5.6rem 53.5rem;
 
-  @media ${device.mobileMedium} {
+  @media ${device.laptopLarge} {
     font-size: 2rem;
+    text-align: center;
+    margin: 0 15rem 4rem 15rem;
+    margin-bottom: 7.5rem;
+  }
+
+  @media ${device.mobileLarge} {
     text-align: left;
     margin: 0;
-    margin-bottom: 7.2rem;
+    margin-bottom: 7.5rem;
   }
 `;
 
@@ -80,7 +100,12 @@ export const VideoContainer = () => {
         laptopLargeText(textSectionRef);
       },
 
-      "(max-width: 375px)": function () {
+      "(min-width: 500px)": function () {
+        laptopLargeHeadline(headlineRef);
+        laptopLargeText(textSectionRef);
+      },
+
+      "(max-width: 499px)": function () {
         mobileMediumHeadline(headlineRef);
         mobileMediumText(textSectionRef);
       },

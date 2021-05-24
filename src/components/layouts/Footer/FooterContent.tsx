@@ -11,7 +11,7 @@ const FooterContentWrapper = styled.div`
   align-items: flex-start;
   margin: 5.1rem 0 8rem 0;
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
     flex-direction: column-reverse;
     justify-content: flex-start;
     margin: 5.6rem 0 8rem 0;
@@ -31,19 +31,34 @@ const FooterListWrapper = styled.div`
     margin-right: 5.8rem;
   }
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
     flex-direction: column;
     justify-content: flex-start;
   }
 `;
 
+const footerLists = [
+  {
+    id: 1,
+    listName: "Products",
+  },
+  {
+    id: 2,
+    listName: "Company",
+  },
+  {
+    id: 3,
+    listName: "Help",
+  },
+];
+
 export const FooterContent = () => {
   return (
     <FooterContentWrapper>
       <FooterListWrapper>
-        <FooterList listName="Products" />
-        <FooterList listName="Company" />
-        <FooterList listName="Help" />
+        {footerLists.map(({ id, listName }) => (
+          <FooterList key={id} listName={listName} />
+        ))}
       </FooterListWrapper>
       <EmailInputContainer />
     </FooterContentWrapper>

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/constants";
 import { device } from "../../../styles/responsive";
 import { lightTheme } from "../../../styles/theme";
 
@@ -21,6 +21,10 @@ const BenefitInfoCardWrapper = styled.div`
   &:hover {
     box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.25);
     transform: translateY(1rem);
+  }
+
+  @media ${device.mobileMedium} {
+    margin-bottom: 4rem;
   }
 `;
 

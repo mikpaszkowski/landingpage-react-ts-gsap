@@ -14,9 +14,8 @@ const BenefitsWrapper = styled.div`
   grid-gap: 3rem;
   opacity: 1;
 
-  @media ${device.mobileMedium} {
+  @media ${device.laptopSmall} {
     display: block;
-    padding: 0 2.4rem;
     margin-top: 3.6rem;
   }
 `;
@@ -48,6 +47,9 @@ export const Benefits = ({ benefitCardsContent }: BenefitsProps) => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": function () {
+        benefitsCardsRef.current.forEach((card) => laptopLarge(card));
+      },
+      "(min-width: 500px)": function () {
         benefitsCardsRef.current.forEach((card) => laptopLarge(card));
       },
       "(max-width: 375px)": function () {

@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { PlayButton } from "./PlayButton";
 import { device } from "../../../styles/responsive";
+import { laptopLarge, mobileMedium } from "../../../animations/videoPlayer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -19,10 +20,9 @@ const VideoPlayerWrapper = styled.div`
     rgba(0, 0, 0, 0.06) 100%
   );
 
-  @media ${device.mobileMedium} {
-    margin: 0 auto;
+  @media ${device.tablet} {
+    margin: 0 0 15rem 0;
     padding: 0;
-    height: 15.7rem;
     width: 100%;
     border-radius: 0.8rem;
   }
@@ -44,49 +44,9 @@ export const VideoPlayer = () => {
 
   useEffect(() => {
     ScrollTrigger.matchMedia({
-      "(min-width: 1440px)": function () {
-        gsap.fromTo(
-          videoRef.current,
-          {
-            opacity: 0,
-            y: "-=80",
-          },
-          {
-            duration: 1.2,
-            delay: 0.7,
-            opacity: 1,
-            y: 0,
-            ease: "expo.out",
-            scrollTrigger: {
-              trigger: `${videoRef.current?.className}`,
-              start: "center-=800 40%",
-              markers: true,
-            },
-          }
-        );
-      },
-
-      "(max-width: 375px)": function () {
-        gsap.fromTo(
-          videoRef.current,
-          {
-            opacity: 0,
-            y: "-=30",
-          },
-          {
-            duration: 1.2,
-            delay: 1,
-            opacity: 1,
-            y: 0,
-            ease: "expo.out",
-            scrollTrigger: {
-              trigger: `${videoRef.current?.className}`,
-              start: "center+=150 center+=100",
-              markers: true,
-            },
-          }
-        );
-      },
+      "(min-width: 1440px)": () => laptopLarge(videoRef),
+      "(min-width: 500px)": () => laptopLarge(videoRef),
+      "(max-width: 499px)": () => mobileMedium(videoRef),
     });
   }, []);
 

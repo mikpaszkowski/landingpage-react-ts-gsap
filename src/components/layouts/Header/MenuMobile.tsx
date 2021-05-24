@@ -2,7 +2,7 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { MenuItem } from "./MenuItem";
 import { CustomButton } from "../../ReusableComponents/CustomButton";
-import { menuItems, IMenuItems } from "../../../assets/menuItems/menuItems";
+import { IMenuItems } from "../../staticContents/menu/menuItems";
 import { IoCloseOutline } from "react-icons/io5";
 
 const slideDown = keyframes`
@@ -72,12 +72,10 @@ export const MenuMobile = ({
   return isMenuOpen ? (
     <MenuWrapper>
       <Menu>
-        {menuItems.forEach(({ id, name }) => {
-          <MenuItem key={id} name={name} />;
-        })}
-        <LogInButton fontSize="2.4rem" lineHeight="3.6rem">
-          Log in
-        </LogInButton>
+        {menuItems.map(({ id, name }) => (
+          <MenuItem key={id} name={name} />
+        ))}
+        <LogInButton fontSize="2.4rem" lineHeight="3.6rem" name="Log in" />
       </Menu>
       <CloseButton onClick={closeMenuMobile} />
     </MenuWrapper>

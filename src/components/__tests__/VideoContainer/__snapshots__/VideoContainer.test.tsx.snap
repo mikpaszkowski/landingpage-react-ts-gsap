@@ -135,17 +135,28 @@ exports[`check render correctly <LandingHeroContainer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:768px) {
   .c3 {
-    margin: 0 auto;
+    margin: 0 0 15rem 0;
     padding: 0;
-    height: 15.7rem;
     width: 100%;
     border-radius: 0.8rem;
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
+  .c0 {
+    height: 43.7rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    height: 50rem;
+  }
+}
+
+@media (max-width:525px) {
   .c0 {
     padding: 0 2.4rem;
     margin-bottom: 13.7rem;
@@ -153,7 +164,15 @@ exports[`check render correctly <LandingHeroContainer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
+  .c1 {
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 8rem 3.7rem 8rem;
+  }
+}
+
+@media (max-width:525px) {
   .c1 {
     font-size: 5rem;
     text-align: left;
@@ -162,12 +181,20 @@ exports[`check render correctly <LandingHeroContainer /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1440px) {
   .c2 {
     font-size: 2rem;
+    text-align: center;
+    margin: 0 15rem 4rem 15rem;
+    margin-bottom: 7.5rem;
+  }
+}
+
+@media (max-width:525px) {
+  .c2 {
     text-align: left;
     margin: 0;
-    margin-bottom: 7.2rem;
+    margin-bottom: 7.5rem;
   }
 }
 

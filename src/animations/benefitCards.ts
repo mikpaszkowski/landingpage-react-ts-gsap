@@ -9,11 +9,11 @@ export const laptopLarge = (ref: HTMLDivElement) =>  gsap.fromTo(
     },
     {
       duration: 0.7,
-      delay: 0.5,
+      delay: 0.2,
       opacity: 1,
       y: 0,
       ease: "none",
-      stagger: 1,
+      stagger: .6,
       scrollTrigger: {
         id: "benefitCard",
         trigger: `${ref?.id}`,
@@ -32,7 +32,7 @@ export const mobileMedium = (ref: HTMLDivElement) => gsap.fromTo(
     },
     {
       duration: 0.5,
-      delay: 0.3,
+      delay: 0.1,
       opacity: 1,
       y: 0,
       ease: "power4.out",

@@ -8,7 +8,7 @@ export const laptopLargeLeftSection = (ref: React.RefObject<HTMLDivElement>) => 
     },
     {
       duration: 1,
-      delay: 0.5,
+      delay: 0.3,
       opacity: 1,
       x: 0,
       ease: "expo.out",
@@ -22,8 +22,8 @@ export const laptopLargeLeftSection = (ref: React.RefObject<HTMLDivElement>) => 
       x: "+=70",
     },
     {
-      duration: 1.2,
-      delay: 0.7,
+      duration: 1,
+      delay: 0.5,
       opacity: 1,
       x: 0,
       ease: "expo.out",

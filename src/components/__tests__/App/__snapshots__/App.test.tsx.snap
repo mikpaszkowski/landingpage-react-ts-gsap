@@ -1,0 +1,1767 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check render correctly <App /> component 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 17.3rem;
+  height: 4.7rem;
+  cursor: pointer;
+}
+
+.c7 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  width: 10.2rem;
+  line-height: 117%;
+  color: #131E07;
+}
+
+.c43 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  width: 10.2rem;
+  line-height: 117%;
+  color: white;
+}
+
+.c6 {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.3rem;
+}
+
+.c12 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.7rem 3.1rem;
+  font-family: 'Reem Kufi',sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.6rem;
+  color: #131E07;
+  border: none;
+  border-radius: 8px;
+  background-color: #FABD20;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.c12::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: black;
+  color: #FABD20;
+  -webkit-transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c12:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  color: #FABD20;
+}
+
+.c12:hover::after {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.c19 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.7rem 3.1rem;
+  font-family: 'Reem Kufi',sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.7rem;
+  color: #131E07;
+  border: none;
+  border-radius: 8px;
+  background-color: #FABD20;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.c19::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: black;
+  color: #FABD20;
+  -webkit-transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c19:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  color: #FABD20;
+}
+
+.c19:hover::after {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.c50 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.7rem 3.1rem;
+  font-family: 'Reem Kufi',sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.7rem;
+  color: #131E07;
+  border: none;
+  border-radius: 4px;
+  background-color: #FABD20;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.c50::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: black;
+  color: #FABD20;
+  -webkit-transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c50:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  color: #FABD20;
+}
+
+.c50:hover::after {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 27.1rem;
+  padding: 0 16.7rem;
+  position: relative;
+  width: 100%;
+}
+
+.c16 {
+  font-size: 8rem;
+  margin-left: 0.2rem;
+  line-height: 117%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.c18 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Reem Kufi',sans-serif;
+  color: #40462F;
+  margin-bottom: 3.6rem;
+  margin-top: 1.6rem;
+  margin-left: 0.2rem;
+}
+
+.c20 {
+  padding: 1.6rem 1rem;
+  width: 25.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-top: 4.9rem;
+}
+
+.c22 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  width: 67.7rem;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c24 {
+  display: block;
+  font-family: 'Rozha One',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8rem;
+  line-height: 117%;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  font-feature-settings: "haln" on;
+  color: #FABD20;
+}
+
+.c25 {
+  display: block;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  margin: 0 4rem;
+  text-align: center;
+  color: #131E07;
+}
+
+.c23 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 11.1rem;
+  margin: 22rem 21.9rem;
+  will-change: transform;
+}
+
+.c31 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13rem;
+  height: 13rem;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  background-color: rgba(254,244,230,0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  will-change: transform;
+}
+
+.c31:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.2);
+  background-color: rgba(254,244,230,1);
+}
+
+.c32 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.c33 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin-left: 0.35rem;
+}
+
+.c34 {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin-left: 0.35rem;
+}
+
+.c29 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+  margin: 0 10rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background: linear-gradient( 180deg, rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.06) 100% );
+}
+
+.c30 {
+  position: relative;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.c26 {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 81.1rem;
+  background-color: #FABD20;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 36.3rem;
+}
+
+.c27 {
+  font-family: 'Rozha One',serif;
+  font-size: 8rem;
+  padding-top: 6.4rem;
+  margin: 0 30rem 4rem 30rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 117%;
+  text-align: center;
+  font-feature-settings: "haln" on;
+}
+
+.c28 {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  margin: 4rem 53.5rem 5.6rem 53.5rem;
+}
+
+.c39 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  height: 45rem;
+  border-radius: 8px;
+  background-color: #131E07;
+  -webkit-transition: all 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  will-change: transform;
+}
+
+.c39:hover {
+  box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
+  -webkit-transform: translateY(1rem);
+  -ms-transform: translateY(1rem);
+  transform: translateY(1rem);
+}
+
+.c40 {
+  font-family: 'Rozha One',serif;
+  font-size: 2.4rem;
+  padding-top: 8.1rem;
+  margin-bottom: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 117%;
+  text-align: center;
+  font-feature-settings: "haln" on;
+  color: #131E07;
+}
+
+.c41 {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-align: center;
+  margin: 0 7rem;
+  margin-bottom: 4.5rem;
+}
+
+.c38 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  opacity: 1;
+}
+
+.c36 {
+  font-family: 'Rozha One',serif;
+  font-size: 8rem;
+  padding-top: 6.4rem;
+  margin-bottom: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 117%;
+  text-align: left;
+  font-feature-settings: "haln" on;
+}
+
+.c37 {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: left;
+  margin-bottom: 7.2rem;
+  width: 59.6rem;
+}
+
+.c35 {
+  margin: 0 16.5rem 11.4rem 16.5rem;
+  will-change: transform;
+}
+
+.c46 > li {
+  color: #E5E5E5;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  list-style-type: none;
+}
+
+.c46 > li:first-child {
+  color: #7C8176;
+  margin-bottom: 1.9rem;
+}
+
+.c48 {
+  position: relative;
+  width: 35rem;
+  height: 5rem;
+  background-color: transparent;
+  font-family: 'Reem Kufi',sans-serif;
+  color: #7C8176;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  border: 1px solid #7C8176;
+  border-radius: 8px;
+  padding: 1.2rem 14rem 1.2rem 1.6rem;
+}
+
+.c47 {
+  position: relative;
+}
+
+.c47 > p {
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-bottom: 1.6rem;
+  color: #7C8176;
+}
+
+.c51 {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  padding: 0.3rem 1.6rem 0.4rem 1.6rem;
+  border-radius: 4px;
+}
+
+.c44 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin: 5.1rem 0 8rem 0;
+}
+
+.c45 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c45 ul:nth-child(2) {
+  margin-right: 14rem;
+}
+
+.c45 ul:first-child {
+  margin-right: 5.8rem;
+}
+
+.c42 {
+  position: relative;
+  width: 100%;
+  padding: 8.9rem 16.5rem 4.7rem 16.5rem;
+  background-color: #131E07;
+}
+
+.c52 {
+  height: 0.1rem;
+  background-color: white;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.c53 {
+  position: absolute;
+  bottom: 1.6rem;
+  right: 16.6rem;
+  font-family: 'Reem Kufi',sans-serif;
+  color: #E5E5E5;
+  opacity: 0.5;
+}
+
+.c9 {
+  margin: 0.7rem 0;
+}
+
+.c10 {
+  position: relative;
+  font-family: 'Reem Kufi',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #131E07;
+}
+
+.c10:focus > svg {
+  display: block;
+}
+
+.c11 {
+  display: none;
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 64.4rem;
+}
+
+.c4 {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 9999;
+  max-width: 145rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2.7rem 16.7rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #FEF4E6;
+}
+
+.c13 {
+  display: none;
+  width: 3rem;
+  height: 1.7rem;
+  cursor: pointer;
+  fill: #131E07;
+}
+
+.c1 {
+  position: absolute;
+  top: -5rem;
+  right: 16rem;
+  z-index: 2;
+  background-color: #131E07;
+  border: 1px solid #131E07;
+  -moz-box-shadow: 0px 0px 10px 0px #E5E5E5;
+  -webkit-box-shadow: 0px 0px 10px 0px #E5E5E5;
+  box-shadow: 0px 0px 10px 0px #131E07;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  width: 7rem;
+  height: 3.7rem;
+}
+
+.c1::after {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  right: 0.4rem;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.c2 {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.6rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  color: #FABD20;
+}
+
+.c3 {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.6rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  color: #FFFFFF;
+  -webkit-transform: rotate(250deg);
+  -ms-transform: rotate(250deg);
+  transform: rotate(250deg);
+  will-change: transform;
+}
+
+.c0 {
+  display: block;
+  max-width: 144rem;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width:1440px) {
+  .c14 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0 16.7rem;
+  }
+}
+
+@media (max-width:1280px) {
+  .c14 {
+    margin-top: 15rem;
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c14 {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 0 2.4rem;
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c14 {
+    padding: 0 2.4rem;
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c14 {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    padding: 0 2.4rem;
+  }
+}
+
+@media (max-width:1440px) {
+  .c16 {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c16 {
+    width: 100%;
+    font-size: 7rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c16 {
+    font-size: 5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:375px) {
+  .c16 {
+    font-size: 5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:1280px) {
+  .c18 {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c18 {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c18 {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c20 {
+    width: 100%;
+  }
+}
+
+@media (max-width:375px) {
+  .c20 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1440px) {
+  .c21 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+}
+
+@media (max-width:1110px) {
+
+}
+
+@media (max-width:375px) {
+  .c21 {
+    width: auto;
+    margin-top: 2.4rem;
+  }
+}
+
+@media (max-width:1280px) {
+  .c22 {
+    width: 55rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c22 {
+    width: 90%;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width:375px) {
+  .c22 {
+    min-width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width:1280px) {
+  .c15 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 4.2rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c15 {
+    margin-top: 4.2rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:375px) {
+  .c17 {
+    width: 2.7rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c24 {
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width:1280px) {
+  .c23 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin: 22rem 21.9rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c23 {
+    margin: 15rem 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:525px) {
+  .c23 {
+    margin: 6.4rem 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:375px) {
+  .c31 {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c32 {
+    width: 3.48rem;
+    height: 3.48rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c33 {
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
+  .c34 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c29 {
+    margin: 0 0 15rem 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c26 {
+    height: 43.7rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c26 {
+    height: 50rem;
+  }
+}
+
+@media (max-width:525px) {
+  .c26 {
+    padding: 0 2.4rem;
+    margin-bottom: 13.7rem;
+    height: 49.7rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c27 {
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 8rem 3.7rem 8rem;
+  }
+}
+
+@media (max-width:525px) {
+  .c27 {
+    font-size: 5rem;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 3.7rem;
+  }
+}
+
+@media (max-width:1440px) {
+  .c28 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 15rem 4rem 15rem;
+    margin-bottom: 7.5rem;
+  }
+}
+
+@media (max-width:525px) {
+  .c28 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 7.5rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c39 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c41 {
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+    width: 23rem;
+  }
+}
+
+@media (max-width:1280px) {
+  .c38 {
+    display: block;
+    margin-top: 3.6rem;
+  }
+}
+
+@media (max-width:525px) {
+  .c36 {
+    font-size: 5rem;
+    margin-bottom: 3.6rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c37 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width:1280px) {
+  .c35 {
+    margin: 0 6rem;
+  }
+}
+
+@media (max-width:525px) {
+  .c35 {
+    margin: 0 2.4rem 6.4rem 2.4rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c46 {
+    margin-bottom: 3.1rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c48 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c47 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c51 {
+    position: relative;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    padding: 1.6rem 8rem 1.6rem 8rem;
+    margin: 1.6rem 0 6.3rem 0;
+  }
+}
+
+@media (max-width:1110px) {
+  .c49 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c44 {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 5.6rem 0 8rem 0;
+  }
+}
+
+@media (max-width:1110px) {
+  .c45 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width:768px) {
+  .c42 {
+    padding: 6.4rem 2.4rem 5.5rem 2.4rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c52 {
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
+  .c53 {
+    display: none;
+  }
+}
+
+@media (max-width:1110px) {
+  .c8 {
+    display: none;
+  }
+}
+
+@media (max-width:1280px) {
+  .c4 {
+    padding: 2.7rem 6rem;
+  }
+}
+
+@media (max-width:375px) {
+  .c4 {
+    position: relative;
+    padding: 2.7rem 2.4rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c13 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 2.4rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: #131E07;
+  }
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <svg
+      className="c2"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 20 20"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+        fillRule="evenodd"
+      />
+    </svg>
+    <svg
+      className="c3"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 20 20"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+      />
+    </svg>
+  </button>
+  <header
+    className="c4"
+  >
+    <div
+      className="c5"
+    >
+      <svg
+        className="c6"
+      >
+        ellipse-1.svg
+      </svg>
+      <svg>
+        ellipse-2.svg
+      </svg>
+      <p
+        className="c7"
+      >
+        Medli
+      </p>
+    </div>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <a
+          className="c10"
+          href="#"
+        >
+          Home
+          <svg
+            className="c11"
+          >
+            ellipse-4.svg
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c9"
+      >
+        <a
+          className="c10"
+          href="#"
+        >
+          About
+          <svg
+            className="c11"
+          >
+            ellipse-4.svg
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c9"
+      >
+        <a
+          className="c10"
+          href="#"
+        >
+          Courses
+          <svg
+            className="c11"
+          >
+            ellipse-4.svg
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c9"
+      >
+        <a
+          className="c10"
+          href="#"
+        >
+          News
+          <svg
+            className="c11"
+          >
+            ellipse-4.svg
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c9"
+      >
+        <a
+          className="c10"
+          href="#"
+        >
+          Contact
+          <svg
+            className="c11"
+          >
+            ellipse-4.svg
+          </svg>
+        </a>
+      </div>
+      <button
+        className="c12"
+        fontSize="2.4rem"
+      >
+        Log in
+      </button>
+    </div>
+    <svg
+      className="c13"
+      onClick={[Function]}
+    >
+      menu-bar.svg
+    </svg>
+  </header>
+  <div
+    className="c14"
+  >
+    <div
+      className="c15"
+    >
+      <h1
+        className="c16"
+      >
+        Check y
+        <svg
+          className="c17"
+        >
+          ellipse-3.svg
+        </svg>
+        ur well-being
+      </h1>
+      <p
+        className="c18"
+      >
+        We’re sure that deciding to check on your health is a big step, even if it doesn’t bother in any way.
+      </p>
+      <button
+        className="c19 c20"
+        fontSize="2.5rem"
+      >
+        Get started
+      </button>
+    </div>
+    <div
+      className="c21"
+    >
+      <svg
+        className="c22"
+      >
+        hero-img.svg
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c23"
+  >
+    <div
+      className=""
+    >
+      <h1
+        className="c24"
+      >
+        230+
+      </h1>
+      <p
+        className="c25"
+      >
+        Scientifically based tests
+      </p>
+    </div>
+    <div
+      className=""
+    >
+      <h1
+        className="c24"
+      >
+        10,000+
+      </h1>
+      <p
+        className="c25"
+      >
+        Medical recommendations
+      </p>
+    </div>
+    <div
+      className=""
+    >
+      <h1
+        className="c24"
+      >
+        25M+
+      </h1>
+      <p
+        className="c25"
+      >
+        Students learning
+      </p>
+    </div>
+  </div>
+  <div
+    className="c26"
+  >
+    <h1
+      className="c27"
+    >
+      What our community is saying?
+    </h1>
+    <p
+      className="c28"
+    >
+      A mission-driven company that invest in and builds healthier living
+    </p>
+    <div
+      className="c29"
+    >
+      <img
+        alt="Woman as freelance worker does yoga exersice in jumper."
+        className="c30"
+        src="/yoga-woman-image.png"
+      />
+      <div
+        className="c31"
+      >
+        <div
+          className="c32"
+        >
+          <svg
+            className="c33"
+          >
+            playButtonPolygon.svg
+          </svg>
+        </div>
+        <svg
+          className="c34"
+        >
+          playButtonPolygonSmall.svg
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c35"
+  >
+    <h1
+      className="c36"
+    >
+      What you’re getting?
+    </h1>
+    <span
+      className="c37"
+    >
+      We bring you personalized development programs that are backed by research and crafted from the years of experience
+    </span>
+    <div
+      className="c38"
+    >
+      <div
+        className="c39"
+        id="benefit-card1"
+      >
+        <svg
+          style={
+            Object {
+              "margin": "0 auto",
+              "marginTop": "4.5rem",
+            }
+          }
+        >
+          benefit-1.svg
+        </svg>
+        <h1
+          className="c40"
+        >
+          1 FREE chat session
+        </h1>
+        <p
+          className="c41"
+        >
+          Start with a free text based chat session online
+        </p>
+      </div>
+      <div
+        className="c39"
+        id="benefit-card2"
+      >
+        <svg
+          style={
+            Object {
+              "margin": "0 auto",
+              "marginTop": "4.5rem",
+            }
+          }
+        >
+          benefit-2.svg
+        </svg>
+        <h1
+          className="c40"
+        >
+          Personal Coach
+        </h1>
+        <p
+          className="c41"
+        >
+          A dedicated coach to help you through your journey
+        </p>
+      </div>
+      <div
+        className="c39"
+        id="benefit-card3"
+      >
+        <svg
+          style={
+            Object {
+              "margin": "0 auto",
+              "marginTop": "4.5rem",
+            }
+          }
+        >
+          benefit-3.svg
+        </svg>
+        <h1
+          className="c40"
+        >
+          Text chat session
+        </h1>
+        <p
+          className="c41"
+        >
+          An excellent way of preaparing a projects wireframe
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c42"
+  >
+    <div
+      className="c5"
+    >
+      <svg
+        className="c6"
+      >
+        ellipse-1.svg
+      </svg>
+      <svg>
+        ellipse-2.svg
+      </svg>
+      <p
+        className="c43"
+      >
+        Medli
+      </p>
+    </div>
+    <div
+      className="c44"
+    >
+      <div
+        className="c45"
+      >
+        <ul
+          className="c46"
+        >
+          <li>
+            Products
+          </li>
+          <li>
+            Updates
+          </li>
+          <li>
+            Security
+          </li>
+          <li>
+            Help
+          </li>
+        </ul>
+        <ul
+          className="c46"
+        >
+          <li>
+            Company
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Blog
+          </li>
+          <li>
+            Join Us
+          </li>
+        </ul>
+        <ul
+          className="c46"
+        >
+          <li>
+            Help
+          </li>
+          <li>
+            Talk to Support
+          </li>
+          <li>
+            Support Docs
+          </li>
+          <li>
+            API Docs
+          </li>
+          <li>
+            System Status
+          </li>
+        </ul>
+      </div>
+      <div
+        className="c47"
+      >
+        <p>
+          Try Medli for free
+        </p>
+        <div>
+          <input
+            className="c48 c49"
+            placeholder="Enter your email"
+          />
+        </div>
+        <button
+          className="c50 c51"
+          fontSize="1.8rem"
+        >
+          Get started
+        </button>
+      </div>
+    </div>
+    <div
+      className="c52"
+    />
+    <p
+      className="c53"
+    >
+      Therms & Conditions
+    </p>
+  </div>
+</div>
+`;

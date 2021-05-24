@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { MenuItem } from "./MenuItem";
 import { CustomButton } from "../../ReusableComponents/CustomButton";
-import { IMenuItems } from "../../../assets/menuItems/menuItems";
+import { IMenuItems } from "../../staticContents/menu/menuItems";
 import { device } from "../../../styles/responsive";
 
 const MenuWrapper = styled.div`
@@ -12,7 +12,7 @@ const MenuWrapper = styled.div`
   align-items: center;
   width: 64.4rem;
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
     display: none;
   }
 `;

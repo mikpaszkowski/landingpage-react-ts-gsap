@@ -9,13 +9,33 @@ export const laptopLarge = (ref: React.RefObject<HTMLDivElement>) => gsap.fromTo
     },
     {
       duration: 0.7,
-      delay: 0.3,
+      delay: 0.1,
       opacity: 1,
       y: 0,
       ease: "power4.out",
       scrollTrigger: {
         trigger: `${ref.current?.className}`,
-        start: "top 20%",
+        start: "top 10%",
+        markers: true,
+      },
+    }
+  );
+
+  export const tabletLarge = (ref: React.RefObject<HTMLDivElement>) => gsap.fromTo(
+    ref.current,
+    {
+      opacity: 0,
+      y: "+=100",
+    },
+    {
+      duration: 0.7,
+      delay: 0.1,
+      opacity: 1,
+      y: 0,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: `${ref.current?.className}`,
+        start: "top 10%",
         markers: true,
       },
     }
@@ -29,7 +49,7 @@ export const mobileMedium = (ref: React.RefObject<HTMLDivElement>) =>  gsap.from
     },
     {
       duration: 0.5,
-      delay: 0.3,
+      delay: 0.1,
       opacity: 1,
       y: 0,
       ease: "none",

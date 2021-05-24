@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../../styles/styleConstants";
-import { lists } from "../../../assets/footerContent/footerLists";
+import { fontTypes } from "../../../styles/constants";
+import { lists } from "../../staticContents/footer/footerLists";
 import { device } from "../../../styles/responsive";
 
 const List = styled.ul`

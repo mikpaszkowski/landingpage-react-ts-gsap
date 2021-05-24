@@ -1,13 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/constants";
 import { device } from "../../../styles/responsive";
 
-const AccomplishmentItemWrapper = styled.div`
-  @media ${device.mobileMedium} {
-    margin-bottom: 10rem;
-  }
-`;
+const AccomplishmentItemWrapper = styled.div``;
 
 const Headline = styled.h1`
   display: block;

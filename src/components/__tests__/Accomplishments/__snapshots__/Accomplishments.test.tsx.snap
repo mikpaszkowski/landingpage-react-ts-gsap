@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`check render correctly <Accomplishments /> component 1`] = `
-.c2 {
+.c1 {
   display: block;
   font-family: 'Rozha One',serif;
   font-style: normal;
@@ -14,7 +14,7 @@ exports[`check render correctly <Accomplishments /> component 1`] = `
   color: #FABD20;
 }
 
-.c3 {
+.c2 {
   display: block;
   font-family: 'Reem Kufi',sans-serif;
   font-style: normal;
@@ -36,21 +36,48 @@ exports[`check render correctly <Accomplishments /> component 1`] = `
 
 @media (max-width:375px) {
   .c1 {
-    margin-bottom: 10rem;
-  }
-}
-
-@media (max-width:375px) {
-  .c2 {
     margin-bottom: 0.6rem;
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1280px) {
   .c0 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin: 22rem 21.9rem;
+  }
+}
+
+@media (max-width:1110px) {
+  .c0 {
+    margin: 15rem 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:525px) {
+  .c0 {
     margin: 6.4rem 0;
-    padding: 0 2.4rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -58,43 +85,43 @@ exports[`check render correctly <Accomplishments /> component 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className=""
   >
     <h1
-      className="c2"
+      className="c1"
     >
       230+
     </h1>
     <p
-      className="c3"
+      className="c2"
     >
       Scientifically based tests
     </p>
   </div>
   <div
-    className="c1"
+    className=""
   >
     <h1
-      className="c2"
+      className="c1"
     >
       10,000+
     </h1>
     <p
-      className="c3"
+      className="c2"
     >
       Medical recommendations
     </p>
   </div>
   <div
-    className="c1"
+    className=""
   >
     <h1
-      className="c2"
+      className="c1"
     >
       25M+
     </h1>
     <p
-      className="c3"
+      className="c2"
     >
       Students learning
     </p>

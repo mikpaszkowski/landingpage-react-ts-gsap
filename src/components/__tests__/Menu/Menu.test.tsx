@@ -1,7 +1,7 @@
 import { cleanup } from "@testing-library/react";
 import "jest-styled-components";
 import { renderWithLightTheme, mountWithDarkTheme } from "../helpers/index";
-import { menuItems } from "../../../assets/menuItems/menuItems";
+import { menuItems } from "../../staticContents/menu/menuItems";
 import { Menu } from "../../layouts/Header/Menu";
 import { MenuItem } from "../../layouts/Header/MenuItem";
 import { CustomButton } from "../../ReusableComponents/CustomButton";

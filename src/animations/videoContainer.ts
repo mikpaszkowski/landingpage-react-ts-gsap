@@ -7,8 +7,7 @@ export const laptopLargeHeadline = (ref: React.RefObject<HTMLDivElement>) => gsa
       x: "-=80",
     },
     {
-      duration: 1,
-      delay: 0.2,
+      duration: 0.8,
       opacity: 1,
       x: 0,
       ease: "easeInOut",
@@ -27,8 +26,8 @@ export const laptopLargeHeadline = (ref: React.RefObject<HTMLDivElement>) => gsa
       x: "+=80",
     },
     {
-      duration: 1,
-      delay: 0.6,
+      duration: 0.8,
+      delay: 0.1,
       opacity: 1,
       x: 0,
       ease: "expo.out",
@@ -54,8 +53,9 @@ export const mobileMediumHeadline = (ref: React.RefObject<HTMLDivElement>) =>   
       y: 0,
       ease: "expo.out",
       scrollTrigger: {
+        id: "video-headline",
         trigger: `${ref.current?.className}`,
-        start: "center+=150 center+=100",
+        start: "center-=1000 60%",
         markers: true,
       },
     }
@@ -74,8 +74,9 @@ export const mobileMediumHeadline = (ref: React.RefObject<HTMLDivElement>) =>   
       y: 0,
       ease: "expo.out",
       scrollTrigger: {
+        id: "video-text",
         trigger: `${ref.current?.className}`,
-        start: "center-=1000 20%",
+        start: "center-=1000 50%",
         markers: true,
       },
     }

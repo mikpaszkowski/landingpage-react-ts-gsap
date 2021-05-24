@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../styles/styleConstants";
+import { fontTypes } from "../../styles/constants";
 import { CustomInput } from "./CustomInput";
 import { CustomButton } from "./CustomButton";
 import { device } from "../../styles/responsive";
@@ -16,6 +16,10 @@ const EmailInputContainerWrapper = styled.div`
     margin-bottom: 1.6rem;
     color: ${({ theme }) => theme.palette.secondary.fontLight};
   }
+
+  @media ${device.tabletLarge} {
+    width: 100%;
+  }
 `;
 
 const CustomButtonStyled = styled(CustomButton)`
@@ -25,7 +29,7 @@ const CustomButtonStyled = styled(CustomButton)`
   padding: 0.3rem 1.6rem 0.4rem 1.6rem;
   border-radius: 4px;
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
     position: relative;
     width: 100%;
     right: 0;
@@ -36,11 +40,17 @@ const CustomButtonStyled = styled(CustomButton)`
   }
 `;
 
+const CustomInputStyled = styled(CustomInput)`
+  @media ${device.tabletLarge} {
+    width: 100%;
+  }
+`;
+
 export const EmailInputContainer = () => {
   return (
     <EmailInputContainerWrapper>
       <p>Try Medli for free</p>
-      <CustomInput placeholder="Enter your email" />
+      <CustomInputStyled placeholder="Enter your email" />
       <CustomButtonStyled
         fontSize="1.8rem"
         lineHeight="2.7rem"

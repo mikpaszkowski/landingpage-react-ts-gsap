@@ -110,7 +110,7 @@ exports[`check render correctly <Menu /> component 1`] = `
   width: 64.4rem;
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
   .c0 {
     display: none;
   }

@@ -91,6 +91,12 @@ exports[`check render correctly <AccomplishmentItem /> component 1`] = `
 }
 
 @media (max-width:375px) {
+  .c4 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width:375px) {
   .c6 {
     margin: 0 auto;
     margin-bottom: 4.5rem;
@@ -98,15 +104,14 @@ exports[`check render correctly <AccomplishmentItem /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1280px) {
   .c3 {
     display: block;
-    padding: 0 2.4rem;
     margin-top: 3.6rem;
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:525px) {
   .c1 {
     font-size: 5rem;
     margin-bottom: 3.6rem;
@@ -120,7 +125,13 @@ exports[`check render correctly <AccomplishmentItem /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1280px) {
+  .c0 {
+    margin: 0 6rem;
+  }
+}
+
+@media (max-width:525px) {
   .c0 {
     margin: 0 2.4rem 6.4rem 2.4rem;
   }

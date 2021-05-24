@@ -1,7 +1,7 @@
 //Here is the container with the grid contains all of the benefits from the service
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/constants";
 import { ReactComponent as FirstBenefitImage } from "./benefit-1.svg";
 import { ReactComponent as SecondBenefitImage } from "./benefit-2.svg";
 import { ReactComponent as ThirdBenefitImage } from "./benefit-3.svg";
@@ -27,7 +27,7 @@ const HeadLine = styled.h1`
   text-align: left;
   font-feature-settings: "haln" on;
 
-  @media ${device.mobileMedium} {
+  @media ${device.mobileLarge} {
     font-size: 5rem;
     margin-bottom: 3.6rem;
   }
@@ -53,7 +53,11 @@ const BenefitsWrapper = styled.div`
   margin: 0 16.5rem 11.4rem 16.5rem;
   will-change: transform;
 
-  @media ${device.mobileMedium} {
+  @media ${device.laptopSmall} {
+    margin: 0 6rem;
+  }
+
+  @media ${device.mobileLarge} {
     margin: 0 2.4rem 6.4rem 2.4rem;
   }
 `;
@@ -87,8 +91,8 @@ export const BenefitContainer = () => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": () => laptopLarge(sectionRef),
-
-      "(max-width: 375px)": () => mobileMedium(sectionRef),
+      "(min-width: 500px)": () => laptopLarge(sectionRef),
+      "(max-width: 499px)": () => mobileMedium(sectionRef),
     });
   });
 

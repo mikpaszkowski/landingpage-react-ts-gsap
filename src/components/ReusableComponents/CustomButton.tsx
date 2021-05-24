@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { fontTypes } from "../../styles/styleConstants";
+import { fontTypes } from "../../styles/constants";
 
 const Button = styled.button`
   position: relative;

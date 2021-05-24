@@ -7,8 +7,8 @@ export const laptopLarge = (ref: React.RefObject<HTMLDivElement>) => gsap.fromTo
           y: "-=100",
         },
         {
-          duration: 1,
-          delay: 0.3,
+          duration: 0.8,
+          delay: 0.2,
           opacity: 1,
           y: 0,
           ease: "power4.out",
@@ -31,7 +31,7 @@ export const mobileMedium = (ref: React.RefObject<HTMLDivElement>) =>    gsap.fr
     },
     {
       duration: 0.5,
-      delay: 0.3,
+      delay: 0.2,
       opacity: 1,
       y: 0,
       ease: "power4.out",

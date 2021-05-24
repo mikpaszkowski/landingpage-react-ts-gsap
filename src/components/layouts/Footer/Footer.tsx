@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Logo } from "../../ReusableComponents/Logo/Logo";
 import styled from "styled-components";
-import { fontTypes } from "../../../styles/styleConstants";
+import { fontTypes } from "../../../styles/constants";
 import { FooterContent } from "./FooterContent";
 import { device } from "../../../styles/responsive";
 
@@ -11,7 +11,7 @@ const FooterWrapper = styled.div`
   padding: 8.9rem 16.5rem 4.7rem 16.5rem;
   background-color: ${({ theme }) => theme.palette.primary.footerBackground};
 
-  @media ${device.mobileMedium} {
+  @media ${device.tablet} {
     padding: 6.4rem 2.4rem 5.5rem 2.4rem;
   }
 `;

@@ -2,11 +2,15 @@ import * as React from "react";
 
 import styled from "styled-components";
 import { AccomplishmentItem } from "./AccomplishmentItem";
-import { accomplishmentItems } from "../../../assets/accomplishmentsContent/accomplishmentItemList";
+import { accomplishmentItems } from "../../staticContents/accomplishments/accomplishmentItemList";
 import { device } from "../../../styles/responsive";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { laptopLarge, mobileMedium } from "../../../animations/accomplishments";
+import {
+  laptopLarge,
+  mobileMedium,
+  tabletLarge,
+} from "../../../animations/accomplishments";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,10 +21,23 @@ const AccomplishmentsWrapper = styled.div`
   margin: 22rem 21.9rem;
   will-change: transform;
 
-  @media ${device.mobileMedium} {
-    display: block;
+  @media ${device.laptopSmall} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: 22rem 21.9rem;
+  }
+
+  @media ${device.tabletLarge} {
+    margin: 15rem 0;
+    flex-direction: column;
+  }
+
+  @media ${device.mobileLarge} {
     margin: 6.4rem 0;
-    padding: 0 2.4rem;
+    flex-direction: column;
   }
 `;
 
@@ -32,8 +49,8 @@ export const Accomplishments = () => {
   useEffect(() => {
     ScrollTrigger.matchMedia({
       "(min-width: 1440px)": () => laptopLarge(sectionRef),
-
-      "(max-width: 375px)": () => mobileMedium(sectionRef),
+      "(min-width: 500px)": () => tabletLarge(sectionRef),
+      "(max-width: 499px)": () => mobileMedium(sectionRef),
     });
   });
 

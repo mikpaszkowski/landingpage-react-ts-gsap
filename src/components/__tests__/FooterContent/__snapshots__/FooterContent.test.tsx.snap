@@ -32,7 +32,7 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   padding: 1.2rem 14rem 1.2rem 1.6rem;
 }
 
-.c5 {
+.c6 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -66,7 +66,7 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   will-change: transform;
 }
 
-.c5::after {
+.c6::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -81,12 +81,12 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   transition: all 0.15s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c5:hover {
+.c6:hover {
   box-shadow: 0px 1rem 2rem rgba(0,0,0,0.25);
   color: #FABD20;
 }
 
-.c5:hover::after {
+.c6:hover::after {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -106,7 +106,7 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   color: #7C8176;
 }
 
-.c6 {
+.c7 {
   position: absolute;
   right: 0.8rem;
   bottom: 0.8rem;
@@ -167,8 +167,14 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
-  .c6 {
+@media (max-width:1110px) {
+  .c3 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
+  .c7 {
     position: relative;
     width: 100%;
     right: 0;
@@ -179,7 +185,13 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
+  .c5 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1110px) {
   .c0 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
@@ -192,7 +204,7 @@ exports[`check render correctly <FooterContent /> component 1`] = `
   }
 }
 
-@media (max-width:375px) {
+@media (max-width:1110px) {
   .c1 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -270,12 +282,12 @@ exports[`check render correctly <FooterContent /> component 1`] = `
     </p>
     <div>
       <input
-        className="c4"
+        className="c4 c5"
         placeholder="Enter your email"
       />
     </div>
     <button
-      className="c5 c6"
+      className="c6 c7"
       fontSize="1.8rem"
     >
       Get started

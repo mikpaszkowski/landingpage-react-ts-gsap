@@ -3,7 +3,7 @@ import { Logo } from "../../ReusableComponents/Logo/Logo";
 import { Menu } from "./Menu";
 import styled from "styled-components";
 import { ReactComponent as Bar } from "./menu-bar.svg";
-import { menuItems } from "../../../assets/menuItems/menuItems";
+import { menuItems } from "../../staticContents/menu/menuItems";
 import { device } from "../../../styles/responsive";
 import { MenuMobile } from "./MenuMobile";
 
@@ -23,6 +23,10 @@ const HeaderWrapper = styled.header`
   transform: translateX(-50%);
   background-color: ${({ theme }) => theme.palette.common.background};
 
+  @media ${device.laptopSmall} {
+    padding: 2.7rem 6rem;
+  }
+
   @media ${device.mobileMedium} {
     position: relative;
     padding: 2.7rem 2.4rem;
@@ -35,7 +39,7 @@ const MenuBar = styled(Bar)`
   cursor: pointer;
   fill: ${({ theme }) => theme.palette.primary.font};
 
-  @media ${device.mobileMedium} {
+  @media ${device.tabletLarge} {
     display: block;
     position: absolute;
     top: 50%;
